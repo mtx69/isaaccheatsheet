@@ -31,6 +31,9 @@ body {
     background: rgba(65, 52, 42, 0.95);
     z-index: 10; }
 
+a {
+  color: #f00; }
+
 #wrapper {
   position: relative;
   width: 1920px;
@@ -103,22 +106,39 @@ h2, h3, h4, h5, h6 {
     z-index: 6;
     font-size: 0; }
 
+.content {
+  position: relative;
+  float: right;
+  width: 1024px;
+  margin-right: -1em;
+  height: 710px;
+  border: 2px dashed rgba(255, 255, 255, 0.3);
+  border-radius: 2em;
+  text-align: center;
+  padding-top: 18em;
+  z-index: 1000; }
+  .content h4 {
+    font-size: 2em;
+    color: #fff; }
+    .content h4 i {
+      font-size: .6em;
+      display: block;
+      color: #ffffbb; }
+  .content h5 {
+    font-size: 1.25em;
+    margin: .1em 0 0;
+    color: #fff; }
+
+.fluid .content {
+  height: 760px; }
+
 .items {
   width: 1472px;
   float: left;
   padding: 8px 15px 0 0;
   border-right: 1px dashed rgba(0, 0, 0, 0.35); }
-  .items:before {
-    content: ' ';
-    float: right;
-    width: 1024px;
-    margin-right: -1em;
-    height: 710px; }
   .items li {
     width: 10%; }
-
-.fluid .items:before {
-  height: 760px; }
 
 .activated, .trinkets {
   padding-top: 0.3em;

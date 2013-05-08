@@ -35,6 +35,10 @@ body {
   }
 }
 
+a {
+  color: #f00;
+}
+
 #wrapper {
   position: relative;
   width: 1920px;
@@ -120,16 +124,38 @@ h2, h3, h4, h5, h6 {
     font-size: 0;
   }
 }
-.items {
-  &:before {
-    // this is the area you put your BOI window
-    content: ' ';
-    float: right;
-    width: 1024px;
-    margin-right: -1em;
-    height: 710px; //web
-    // background: url(../img/isaac-logo.png) no-repeat 50% 50%;
+.content {
+  position: relative;
+  float: right;
+  width: 1024px;
+  margin-right: -1em;
+  height: 710px; //web
+  border: 2px dashed rgba(255,255,255, .3);
+  border-radius: 2em;
+  text-align: center;
+  padding-top: 18em;
+  z-index: 1000;
+  h4 {
+    font-size: 2em;
+    color: #fff;
+    i {
+      font-size: .6em;
+      display: block;
+      color: $yellow;
+    }
   }
+  h5 {
+    font-size: 1.25em;
+    margin: .1em 0 0;
+    color: #fff;
+  }
+  p {
+  }
+}
+.fluid .content {
+  height: 760px; //fluid.app
+}
+.items {
   width: 454px + 1018;
   float: left;
   padding: 8px 15px 0 0;
@@ -139,11 +165,6 @@ h2, h3, h4, h5, h6 {
   }
   li {
     width: 10%;
-  }
-}
-.fluid .items {
-  &:before {
-    height: 760px; //fluid.app
   }
 }
 .activated, .trinkets {
