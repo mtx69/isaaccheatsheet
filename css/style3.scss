@@ -2,7 +2,7 @@
 
 $yellow: #ffb;
 $brown: darken(rgb(77,62,50),4%);
-$red: #f00;
+$red: #900;
 
 $divider: transparentize(#000,.65);
 
@@ -36,7 +36,7 @@ body {
 }
 
 a {
-  color: #f00;
+  color: $red;
 }
 
 #wrapper {
@@ -112,7 +112,7 @@ h2, h3, h4, h5, h6 {
     text-align: left;
     margin: 0.1em 0 -0.2em .8em;
     color: rgba(0,0,0,.5);
-    color: #800;
+    color: $red;
     font-size: 1em;
     span {
       font-size: .5em;

@@ -32,7 +32,7 @@ body {
     z-index: 10; }
 
 a {
-  color: #f00; }
+  color: #990000; }
 
 #wrapper {
   position: relative;
@@ -64,7 +64,7 @@ h2, h3, h4, h5, h6 {
     .slats li h2 {
       margin: 0;
       padding: 0 1em;
-      color: red; }
+      color: #990000; }
     .slats li h3 {
       font-size: 1em;
       font-weight: bold;
@@ -97,7 +97,7 @@ h2, h3, h4, h5, h6 {
     text-align: left;
     margin: 0.1em 0 -0.2em 0.8em;
     color: rgba(0, 0, 0, 0.5);
-    color: #800;
+    color: #990000;
     font-size: 1em; }
     .activated > h2 span, .items > h2 span, .tarot > h2 span, .trinkets > h2 span, .gallery > h2 span {
       font-size: .5em; }
