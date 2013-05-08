@@ -1,0 +1,190 @@
+@import url(http://fonts.googleapis.com/css?family=Delius+Unicase:400,700);
+* {
+  box-sizing: border-box; }
+
+html {
+  height: 100%;
+  margin: 0;
+  padding: 0; }
+
+body {
+  background: url(../img/the-binding-of-isaac-game-wallpaper.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font-family: verdana;
+  color: #ffffbb;
+  margin: 0;
+  padding: 0;
+  font-size: 62.65%;
+  overflow-x: hidden; }
+  body:after {
+    content: ' ';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(65, 52, 42, 0.95);
+    z-index: 10; }
+
+#wrapper {
+  position: relative;
+  width: 1920px;
+  margin: 0 auto;
+  z-index: 100; }
+
+.screenshot {
+  position: absolute;
+  top: 13px;
+  left: 385px; }
+
+h2, h3, h4, h5, h6 {
+  font-family: 'Delius Unicase', verdana, sans-serif; }
+
+.slats {
+  margin: 0;
+  padding: 0; }
+  .slats li {
+    margin: 0;
+    padding: 0.6em 0 0;
+    text-indent: 0;
+    list-style-type: none;
+    overflow: hidden;
+    text-align: left;
+    display: inline-block;
+    vertical-align: top;
+    font-size: 8px; }
+    .slats li h2 {
+      margin: 0;
+      padding: 0 1em;
+      color: red; }
+    .slats li h3 {
+      font-size: 1em;
+      font-weight: bold;
+      line-height: 1;
+      margin: 0;
+      padding: 0 0 2px;
+      color: #fff; }
+    .slats li img {
+      float: left;
+      margin: 0 5px 0;
+      max-width: 25px;
+      max-height: 25px;
+      max-height: 20px; }
+    .slats li p {
+      line-height: 1; }
+    .slats li h3, .slats li p {
+      margin: 0 0 0 35px; }
+
+.activated, .items, .tarot, .trinkets, .gallery {
+  float: left;
+  overflow: hidden;
+  position: relative; }
+  .activated > h2, .items > h2, .tarot > h2, .trinkets > h2, .gallery > h2 {
+    display: none;
+    z-index: 5;
+    text-align: left;
+    margin: 0.1em 0 -0.2em 0.8em;
+    color: rgba(0, 0, 0, 0.5);
+    color: #800;
+    font-size: 1em; }
+    .activated > h2 span, .items > h2 span, .tarot > h2 span, .trinkets > h2 span, .gallery > h2 span {
+      font-size: .5em; }
+  .activated ul, .items ul, .tarot ul, .trinkets ul, .gallery ul {
+    position: relative;
+    z-index: 6;
+    font-size: 0; }
+
+.items {
+  width: 1472px;
+  float: left;
+  padding: 8px 15px 0 0;
+  border-right: 1px dashed rgba(0, 0, 0, 0.35); }
+  .items:before {
+    content: ' ';
+    float: right;
+    width: 1024px;
+    margin-right: -1em;
+    height: 710px; }
+  .items li {
+    width: 10%; }
+
+.fluid .items:before {
+  height: 760px; }
+
+.activated, .trinkets {
+  padding-top: 0.3em;
+  width: 442px; }
+  .activated li, .trinkets li {
+    width: 33%;
+    padding-top: 0.9em; }
+
+.activated {
+  bottom: 0;
+  border-top: 1px dashed rgba(0, 0, 0, 0.35);
+  margin-top: 0.8em; }
+
+.tarot {
+  width: 1472px;
+  width: 100%;
+  border-top: 1px dashed rgba(0, 0, 0, 0.35);
+  padding-top: .4em;
+  margin-top: .4em; }
+  .tarot li {
+    width: 7%; }
+  .tarot .slats h3, .tarot .slats p {
+    margin: 0 0 0 25px; }
+
+.gallery {
+  display: none;
+  position: fixed;
+  background: #000;
+  overflow-y: scroll;
+  top: 0px;
+  left: 442px;
+  width: 1024px;
+  height: 728px;
+  padding: 0; }
+  .gallery li {
+    width: 10%; }
+    .gallery li h3 {
+      font: 8px/1 verdana; }
+
+@media all and (max-width: 1890px) {
+  #wrapper, .activated, .items, .tarot, .trinkets, .gallery {
+    width: 100%;
+    float: none;
+    display: block;
+    position: relative;
+    top: 0;
+    left: 0;
+    border-width: 0; }
+    #wrapper h2, .activated h2, .items h2, .tarot h2, .trinkets h2, .gallery h2 {
+      border-top: 1px dashed #800;
+      padding: 1em 0 .5em;
+      margin-top: 1em;
+      font-size: 18px;
+      display: block; }
+    #wrapper ul, .activated ul, .items ul, .tarot ul, .trinkets ul, .gallery ul {
+      text-align: left; }
+    #wrapper li, .activated li, .items li, .tarot li, .trinkets li, .gallery li {
+      width: 25%;
+      font-size: 14px;
+      margin-bottom: 1em;
+      line-height: 1.4;
+      padding: 0 1em; }
+
+  .items:before {
+    width: inherit;
+    height: inherit; }
+
+  .gallery {
+    display: none; } }
+@media all and (max-width: 767px) {
+  #wrapper li, .activated li, .items li, .tarot li, .trinkets li, .gallery li {
+    width: 33%; } }
+@media all and (max-width: 479px) and (min-width: 320px) {
+  #wrapper li, .activated li, .items li, .tarot li, .trinkets li, .gallery li {
+    width: 50%; } }

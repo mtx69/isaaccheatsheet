@@ -1,0 +1,26 @@
+# Include your project-specific ignores in this file
+# Read about how to use .gitignore:.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Icon?
+ehthumbs.db
+Thumbs.db
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+*.jpg
+bak
+.sass-cache
+ajax-rename.php
+style.*
+style2.*
+fluid.*
+icon.css
+icon.php
