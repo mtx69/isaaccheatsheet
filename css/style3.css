@@ -1,5 +1,7 @@
 @import url(http://fonts.googleapis.com/css?family=Delius+Unicase:400,700);
 * {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
 html {
