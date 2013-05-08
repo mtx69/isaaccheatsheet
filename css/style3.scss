@@ -77,9 +77,14 @@ h2, h3, h4, h5, h6 {
       padding: 0 0 2px;
       color: #fff;
     }
-    img {
+    .icon {
+      width: 25px;
       float: left;
       margin: 0 5px 0;
+    }
+    img {
+      margin: 0 auto;
+      display: block;
       max-width: 25px;
       max-height: 25px;
       max-height: 20px;

@@ -37,7 +37,7 @@ function getsheet($odnumber) {
 
       $pathtoimg = "img/all/{$shortname}.png";
       if (file_exists($pathtoimg)) {
-        $items .= "<img src='{$pathtoimg}'>";
+        $items .= "<div class='icon'><img src='{$pathtoimg}'></div>";
       }
 
 
