@@ -98,7 +98,7 @@ function getsheet($odnumber) {
 
                     <h5>Mac app coming soon.</h5>
 
-                    <p>Thank you reddit contributors and (whoever ripped those sprites and put them on mediafire)!</p>
+                    <p>Thank you reddit contributors (and whoever ripped those sprites and put them on mediafire)!</p>
 
                 </div>
                 <h2>Items (upgrades)</h2>
