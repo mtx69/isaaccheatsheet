@@ -138,7 +138,19 @@ h2, h3, h4, h5, h6 {
     margin: .1em 0 0;
     color: #fff;
   }
-  p {
+  section {
+    display: inline-block;
+    width: 200px;
+    vertical-align: top;
+    margin: 0 2em;
+    padding: 2em;
+    text-align: left;
+    // border: 2px dashed rgba(255,255,255, .3);
+    border-radius: 2em;
+    background: rgba(0,0,0,.5);
+  }
+  .app {
+    text-align: center;
   }
 }
 .fluid .content {
