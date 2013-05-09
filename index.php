@@ -101,9 +101,9 @@ function getsheet($odnumber) {
                     <p>Thank you reddit contributors (and whoever ripped those sprites and put them on mediafire)!</p>
 
                 </div>
-                <h2>Items (upgrades)</h2>
-                <ul class='slats'><li><h2>Items</h2></li>
-                <?php echo getsheet('oda'); ?>
+                <ul class='slats'>
+                    <li><h2>Items</h2></li>
+                    <?php echo getsheet('oda'); ?>
                 </ul>
             </div>
 
@@ -116,21 +116,21 @@ function getsheet($odnumber) {
             </div>
 
             <div class='trinkets'>
-                <h2>Trinkets <span>(Top-left)</span></h2>
-                <ul class='slats'><li><h2>Trinkets</h2></li>
-                <?php echo getsheet('odb'); ?>
+                <ul class='slats'>
+                    <li><h2>Trinkets</h2></li>
+                    <?php echo getsheet('odb'); ?>
                 </ul>
             </div>
             <div class='activated'>
-                <h2>Activated <span>(press Space)</span></h2>
-                <ul class='slats'><li><h2>Activated</h2></li>
-                <?php echo getsheet('od6'); ?>
+                <ul class='slats'>
+                    <li><h2>Activated</h2></li>
+                    <?php echo getsheet('od6'); ?>
                 </ul>
             </div>
             <div class='tarot'>
-                <h2>Tarot Cards</h2>
-                <ul class='slats'><li><h2>Tarots</h2></li>
-                <?php echo getsheet('od7'); ?>
+                <ul class='slats'>
+                    <li><h2>Tarots</h2></li>
+                    <?php echo getsheet('od7'); ?>
                 </ul>
             </div>
         </div><!--#wrapper-->

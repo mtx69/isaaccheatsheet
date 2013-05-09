@@ -2,7 +2,7 @@
 
 $yellow: #ffb;
 $brown: darken(rgb(77,62,50),4%);
-$red: #900;
+$red: lighten(rgb(77,62,50),30%);
 
 $divider: transparentize(#000,.65);
 
@@ -30,7 +30,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: transparentize($brown,.05);
+    background: transparentize(lighten($brown,6%),.15);
     z-index: 10;
   }
 }
@@ -55,12 +55,13 @@ a {
 h2, h3, h4, h5, h6 {
   font-family: 'Delius Unicase', verdana, sans-serif;
 }
+
 .slats {
   margin: 0;
   padding: 0;
   li {
     margin: 0;
-    padding: 0.6em 0 0;
+    padding: 0.3em 0 0.3em;
     text-indent: 0;
     list-style-type: none;
     // overflow: hidden;
@@ -106,18 +107,6 @@ h2, h3, h4, h5, h6 {
   float: left;
   overflow: hidden;
   position: relative;
-  &>h2 {
-    display: none;
-    z-index: 5;
-    text-align: left;
-    margin: 0.1em 0 -0.2em .8em;
-    color: rgba(0,0,0,.5);
-    color: $red;
-    font-size: 1em;
-    span {
-      font-size: .5em;
-    }
-  }
   ul {
     position: relative;
     z-index: 6;
@@ -155,45 +144,53 @@ h2, h3, h4, h5, h6 {
 .fluid .content {
   height: 760px; //fluid.app
 }
+
+
 .items {
   width: 454px + 1018;
   float: left;
-  padding: 8px 15px 0 0;
+  padding: 9px 15px 0 0;
   border-right: 1px dashed $divider;
-  h2 {
-
-  }
   li {
     width: 10%;
   }
 }
+
+
 .activated, .trinkets {
   padding-top: 0.3em;
   width: 442px;
   // text-align: center;
   li {
     width: 33%;
-    padding-top: 0.9em;
+    // padding-top: 0.9em;
   }
 }
+
+
 .activated {
   bottom: 0;
   border-top: 1px dashed $divider;
   margin-top: 0.8em;
 }
+
+
 .tarot {
   width: 454px + 1018;
   width: 100%;
   // bottom: 0;
   border-top: 1px dashed $divider;
   padding-top: .4em;
-  margin-top: .4em;
+  margin-top: .2em;
   li {
     width: 7%;
   }
   .slats {
+    .icon {
+      width: 15px;
+    }
     h3, p {
-      margin: 0 0 0 25px;
+      margin: 0 0 0 15px;
     }    
   }
 }
