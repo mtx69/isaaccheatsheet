@@ -104,13 +104,24 @@ h1, h2, h3, h4, h5, h6 {
   border: 2px dashed rgba(255, 255, 255, 0.3);
   border-radius: 2em;
   text-align: center;
-  padding-top: 8em;
+  padding-top: 6em;
   z-index: 1000; }
-  .content h4 {
+  .content .instructions {
+    font-family: 'Delius Unicase', verdana, sans-serif;
     font-size: 2em;
     font-weight: normal;
     color: #fff; }
-    .content h4 i {
+    .content .instructions h4 {
+      margin-bottom: 0;
+      font-size: .6em; }
+    .content .instructions ol {
+      list-style-position: inside;
+      margin-top: 0;
+      padding: 0; }
+    .content .instructions li {
+      width: 100%;
+      margin: .2em; }
+    .content .instructions i {
       font-size: .6em;
       display: block;
       color: #ffffbb; }
