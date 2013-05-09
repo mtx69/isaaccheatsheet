@@ -93,7 +93,7 @@ function getsheet($odnumber) {
                     <h4>instructions:</h4>
                     <ol>
                     <li>Launch BOI.</li>
-                    <li>Put the game window over this box. <i>(as high up as it can go)</i></li>
+                    <li>Put the game window over this dotted box. <i>(as high up as it can go)</i></li>
                     <li>Kick Mom's ass!</li>
                     </ol>
                     </div>
@@ -114,7 +114,7 @@ function getsheet($odnumber) {
                         <p><a href="http://fluidapp.com/">Made with Fluid</a></p>
                     </section>
 
-                    <p>Thank you reddit contributors (and whoever ripped those sprites and put them on mediafire)! Give all your monies to Ed McMillen and Florian Himsel.</p>
+                    <p>Thank you reddit contributors (and whoever ripped those sprites and put them on mediafire)! Give all your monies to Ed McMillen and Florian Himsl.</p>
 
                 </div>
                 <ul class='slats'>
