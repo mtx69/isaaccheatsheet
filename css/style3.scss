@@ -119,10 +119,12 @@ h1, h2, h3, h4, h5, h6 {
   width: 1024px;
   margin-right: -1em;
   height: 710px; //web
-  border: 2px dashed rgba(255,255,255, .3);
-  border-radius: 2em;
+  border-left: 2px dashed rgba(255,255,255, .3);
+  border-right: 2px dashed rgba(255,255,255, .3);
+  border-bottom: 2px dashed rgba(255,255,255, .3);
+  border-radius: 0  0 2em 2em;
   text-align: center;
-  padding-top: 6em;
+  padding-top: 3em;
   z-index: 1000;
   font-size: 11px;
   h1 {
@@ -138,12 +140,14 @@ h1, h2, h3, h4, h5, h6 {
     //   font-weight: normal;
     //   letter-spacing: -4px;
     // }
+    padding-bottom: 1em;
   }
   .instructions {
     font-family: 'Delius Unicase', verdana, sans-serif;
     font-size: 2em;
     font-weight: normal;
     color: #fff;
+    padding-bottom: 1em;
     h4 {
       margin-bottom: 0;
       font-size: .6em;
@@ -172,17 +176,38 @@ h1, h2, h3, h4, h5, h6 {
     display: inline-block;
     width: 250px;
     vertical-align: top;
-    margin: 0 2em;
+    margin: 0 2em 2em;
     padding: 1.75em 2em 1em;
     text-align: left;
     // border: 2px dashed rgba(255,255,255, .3);
     border-radius: 2em;
-    background: rgba(0,0,0,.5);
+    background: rgba(0,0,0,.4);
   }
   .app {
     text-align: center;
   }
   .contact {
+    .btn {
+      display: block;
+      text-align: center;
+      margin: 1em auto;
+      width: 10em;
+      padding: .5em 1em;
+      background: #b00;
+      border: 2px solid #000;
+      color: $yellow;
+      text-shadow: 0 -2px 0 #000;
+      font: bold 1em/1 'Delius Unicase', verdana, sans-serif;
+      border-radius: 1em;
+      box-shadow: inset 0 -3px 3px #f80, 0 5px 10px #000;
+      transition: all 150ms ease-in;
+      &:hover {
+        color: #fff;
+        background: #b00;
+        box-shadow: inset 0 -1px 4px #ff0, 0 3px 5px #000;
+        text-shadow: 0 -1px 0 #000;
+     }
+    }
   }
 }
 .fluid .content {
@@ -194,9 +219,17 @@ h1, h2, h3, h4, h5, h6 {
   width: 454px + 1018;
   float: left;
   padding: 2px 15px 0 0;
-  border-right: 1px dashed $divider;
+  // border-right: 1px dashed $divider;
   li {
     width: 10%;
+  }
+  &:after {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border-right: 1px dashed $divider;
+    height: 180px;
+    content: '';
   }
 }
 

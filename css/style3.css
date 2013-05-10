@@ -101,17 +101,22 @@ h1, h2, h3, h4, h5, h6 {
   width: 1024px;
   margin-right: -1em;
   height: 710px;
-  border: 2px dashed rgba(255, 255, 255, 0.3);
-  border-radius: 2em;
+  border-left: 2px dashed rgba(255, 255, 255, 0.3);
+  border-right: 2px dashed rgba(255, 255, 255, 0.3);
+  border-bottom: 2px dashed rgba(255, 255, 255, 0.3);
+  border-radius: 0  0 2em 2em;
   text-align: center;
-  padding-top: 6em;
+  padding-top: 3em;
   z-index: 1000;
   font-size: 11px; }
+  .content h1 {
+    padding-bottom: 1em; }
   .content .instructions {
     font-family: 'Delius Unicase', verdana, sans-serif;
     font-size: 2em;
     font-weight: normal;
-    color: #fff; }
+    color: #fff;
+    padding-bottom: 1em; }
     .content .instructions h4 {
       margin-bottom: 0;
       font-size: .6em; }
@@ -134,13 +139,32 @@ h1, h2, h3, h4, h5, h6 {
     display: inline-block;
     width: 250px;
     vertical-align: top;
-    margin: 0 2em;
+    margin: 0 2em 2em;
     padding: 1.75em 2em 1em;
     text-align: left;
     border-radius: 2em;
-    background: rgba(0, 0, 0, 0.5); }
+    background: rgba(0, 0, 0, 0.4); }
   .content .app {
     text-align: center; }
+  .content .contact .btn {
+    display: block;
+    text-align: center;
+    margin: 1em auto;
+    width: 10em;
+    padding: .5em 1em;
+    background: #b00;
+    border: 2px solid #000;
+    color: #ffffbb;
+    text-shadow: 0 -2px 0 black;
+    font: bold 1em/1 "Delius Unicase", verdana, sans-serif;
+    border-radius: 1em;
+    box-shadow: inset 0 -3px 3px #ff8800, 0 5px 10px black;
+    transition: all 150ms ease-in; }
+    .content .contact .btn:hover {
+      color: #fff;
+      background: #b00;
+      box-shadow: inset 0 -1px 4px yellow, 0 3px 5px black;
+      text-shadow: 0 -1px 0 black; }
 
 .fluid .content {
   height: 760px; }
@@ -148,10 +172,16 @@ h1, h2, h3, h4, h5, h6 {
 .items {
   width: 1472px;
   float: left;
-  padding: 2px 15px 0 0;
-  border-right: 1px dashed rgba(0, 0, 0, 0.35); }
+  padding: 2px 15px 0 0; }
   .items li {
     width: 10%; }
+  .items:after {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border-right: 1px dashed rgba(0, 0, 0, 0.35);
+    height: 180px;
+    content: ''; }
 
 .activated, .trinkets {
   padding-top: 0.3em;
