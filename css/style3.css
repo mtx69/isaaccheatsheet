@@ -148,7 +148,7 @@ h1, h2, h3, h4, h5, h6 {
 .items {
   width: 1472px;
   float: left;
-  padding: 9px 15px 0 0;
+  padding: 0px 15px 0 0;
   border-right: 1px dashed rgba(0, 0, 0, 0.35); }
   .items li {
     width: 10%; }
@@ -168,8 +168,8 @@ h1, h2, h3, h4, h5, h6 {
   width: 1472px;
   width: 100%;
   border-top: 1px dashed rgba(0, 0, 0, 0.35);
-  padding-top: .4em;
-  margin-top: .2em; }
+  padding-top: .3em;
+  margin-top: .3em; }
   .tarot li {
     width: 7%; }
   .tarot .slats .icon {
