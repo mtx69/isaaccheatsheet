@@ -92,26 +92,29 @@ function getsheet($odnumber) {
                     <div class='instructions'>
                     <h4>instructions:</h4>
                     <ol>
-                    <li>Launch BOI.</li>
+                    <li>Launch The Binding of Isaac.</li>
                     <li>Put the game window over this dotted box. <i>(as high up as it can go)</i></li>
                     <li>Kick Mom's ass!</li>
                     </ol>
                     </div>
                     
                     <section>
-                        <h5>What's this for?</h5>
-                        <p>This is a cheatsheet that you put behind your Binding of Isaac game so you can get a quick item reference while playing. <a href="http://imgur.com/FiiocN9">See here.</a></P>
-
-                        <p>Designed for Macs with a resolution of at least 1940x1080. (Sorry, I'll see what I can do for Windows :/).</P>
+                        <h5>What is this? A cheatsheet for ants?</h5>
+                        <p>This is a cheatsheet that you keep <strong>behind</strong> your Binding of Isaac game window (set to large) so you can get a quick item reference while playing. <a href="http://imgur.com/FiiocN9">See here.</a> Everything is tiny because it was made for my monitor resolution of 1920x1080 and I wanted everthing to fit on screen at the same time.</P>
                     </section>
 
                     <section class='app'>
                         <a href="http://www.mediafire.com/?3418yrzz71nh6t7">
                             <img src='img/osx-icon.png'>
-                            <h5>Download<br>the Mac app.</h5>
+                            <h5>Download<br>the Mac OS X app.</h5>
                         </a>
-                        <p>Run it, hide the statusbar and maximize the screen.</p>
-                        <p><a href="http://fluidapp.com/">Made with Fluid</a></p>
+                        <p>Run it, hide the statusbar (cmd-/) and maximize the screen. This isn't a real program. It's just <a href="http://fluidapp.com/">a minimal browser</a> that displays this webpage without needing to scroll.</p>
+                    </section>
+
+                    <section class='contact'>
+                        <h5>Me fail English? That's unpossible.</h5>
+                        <p>Is an item description wrong? Got a suggestion? <spam style='color: #f00'>Is something <strong>too</strong> red?</spam> <a class="lightbox-31286340382249" style="cursor:pointer;text-decoration:underline;">Click here</a> and we'll absolutely not respond to you. Your correction may end up on the site anyways though. Citations would be nice. Did you realize I'm only writing this text to make these three boxes the same size?</p>
+                        <!-- <p>We're also on <a href='//bindingofisaac.reddit.com'>r/bindingofisaac</a> all the time so we can ignore you there as well.</p> -->
                     </section>
 
                     <p>Thank you reddit contributors (and whoever ripped those sprites and put them on mediafire)! Give all your monies to Ed McMillen and Florian Himsl.</p>
@@ -161,6 +164,18 @@ function getsheet($odnumber) {
             g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
             s.parentNode.insertBefore(g,s)}(document,'script'));
         </script>
+<script src="https://static-interlogyllc.netdna-ssl.com/static/feedback2.js?3.1.373" type="text/javascript">
+new JotformFeedback({
+formId:'31286340382249',
+base:'https://secure.jotform.ca/',
+windowTitle:'Contact',
+background:'#FFA500',
+fontColor:'#FFFFFF',
+type:false,
+height:380,
+width:350
+});
+</script>
 
     </body>
 </html>

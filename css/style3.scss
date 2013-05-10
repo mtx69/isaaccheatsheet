@@ -124,6 +124,7 @@ h1, h2, h3, h4, h5, h6 {
   text-align: center;
   padding-top: 6em;
   z-index: 1000;
+  font-size: 11px;
   h1 {
     // font-size: 5em;
     // line-height: 1;
@@ -169,10 +170,10 @@ h1, h2, h3, h4, h5, h6 {
   }
   section {
     display: inline-block;
-    width: 200px;
+    width: 250px;
     vertical-align: top;
     margin: 0 2em;
-    padding: 2em;
+    padding: 1.75em 2em 1em;
     text-align: left;
     // border: 2px dashed rgba(255,255,255, .3);
     border-radius: 2em;
@@ -180,6 +181,8 @@ h1, h2, h3, h4, h5, h6 {
   }
   .app {
     text-align: center;
+  }
+  .contact {
   }
 }
 .fluid .content {
@@ -255,55 +258,55 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-@media all and (max-width: 1890px) {
-  #wrapper, .activated, .items, .tarot, .trinkets, .gallery {
-    width: 100%;
-    float: none;
-    display: block;
-    position: relative;
-    top: 0;
-    left: 0;
-    border-width: 0;
-    h2 {
-      border-top: 1px dashed #800;
-      padding: 1em 0 .5em;
-      margin-top: 1em;
-      font-size: 18px;
-      display: block;
-    }
-    ul {
-      text-align: left;
-    }
-    li {
-      width: 25%;
-      font-size: 14px;
-      margin-bottom: 1em;
-      line-height: 1.4;
-      padding: 0 1em;
-      // outline: 1px solid red;
-    }
-  }
-  .items {
-    &:before {
-      width: inherit;
-      height: inherit;
-    }
-  }
-  .gallery {
-    display: none;
-  }
-}
-@media all and (max-width: 767px) {
-  #wrapper, .activated, .items, .tarot, .trinkets, .gallery { 
-    li {
-      width: 33%;
-    }
-  }
-}
-@media all and (max-width: 479px) and (min-width: 320px) {
-  #wrapper, .activated, .items, .tarot, .trinkets, .gallery { 
-    li {
-      width: 50%;
-    }
-  }
-}
+// @media all and (max-width: 1890px) {
+//   #wrapper, .activated, .items, .tarot, .trinkets, .gallery {
+//     width: 100%;
+//     float: none;
+//     display: block;
+//     position: relative;
+//     top: 0;
+//     left: 0;
+//     border-width: 0;
+//     h2 {
+//       border-top: 1px dashed #800;
+//       padding: 1em 0 .5em;
+//       margin-top: 1em;
+//       font-size: 18px;
+//       display: block;
+//     }
+//     ul {
+//       text-align: left;
+//     }
+//     li {
+//       width: 25%;
+//       font-size: 14px;
+//       margin-bottom: 1em;
+//       line-height: 1.4;
+//       padding: 0 1em;
+//       // outline: 1px solid red;
+//     }
+//   }
+//   .items {
+//     &:before {
+//       width: inherit;
+//       height: inherit;
+//     }
+//   }
+//   .gallery {
+//     display: none;
+//   }
+// }
+// @media all and (max-width: 767px) {
+//   #wrapper, .activated, .items, .tarot, .trinkets, .gallery { 
+//     li {
+//       width: 33%;
+//     }
+//   }
+// }
+// @media all and (max-width: 479px) and (min-width: 320px) {
+//   #wrapper, .activated, .items, .tarot, .trinkets, .gallery { 
+//     li {
+//       width: 50%;
+//     }
+//   }
+// }
