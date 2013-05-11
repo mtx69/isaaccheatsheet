@@ -71,7 +71,7 @@ h1, h2, h3, h4, h5, h6 {
     h2 {
       font-size: 1.7em;
       margin: 0;
-      padding: 0 1em;
+      padding: 0 .4em;
       color: $ltbrown;
       text-shadow: 0 -2px 0 #000;
     }
@@ -210,6 +210,11 @@ h1, h2, h3, h4, h5, h6 {
   .slats {
     li {
       padding: 0.3em 0 0.4em;
+    }
+  }
+  .activated, .trinkets {
+    li {
+      width: 33%;
     }
   }
 }
