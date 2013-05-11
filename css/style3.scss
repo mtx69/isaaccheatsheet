@@ -2,7 +2,7 @@
 
 $yellow: #ffb;
 $brown: darken(rgb(77,62,50),4%);
-$red: lighten(rgb(77,62,50),30%);
+$ltbrown: lighten(rgb(77,62,50),35%);
 
 $divider: transparentize(#000,.65);
 
@@ -36,7 +36,7 @@ body {
 }
 
 a {
-  color: $red;
+  color: $ltbrown;
 }
 
 #wrapper {
@@ -70,9 +70,11 @@ h1, h2, h3, h4, h5, h6 {
     vertical-align: top;
     font-size: 8px;
     h2 {
+      font-size: 1.7em;
       margin: 0;
       padding: 0 1em;
-      color: $red;
+      color: $ltbrown;
+      text-shadow: 0 -2px 0 #000;
     }
     h3 {
       font-size: 1em;
@@ -119,27 +121,14 @@ h1, h2, h3, h4, h5, h6 {
   width: 1024px;
   margin-right: -1em;
   height: 710px; //web
-  border-left: 2px dashed rgba(255,255,255, .3);
-  border-right: 2px dashed rgba(255,255,255, .3);
-  border-bottom: 2px dashed rgba(255,255,255, .3);
+  border: 2px dashed rgba(255,255,255, .3);
+  border-top-width: 0;
   border-radius: 0  0 2em 2em;
   text-align: center;
   padding-top: 3em;
   z-index: 1000;
   font-size: 11px;
   h1 {
-    // font-size: 5em;
-    // line-height: 1;
-    // font-weight: normal;
-    // color: #f10;
-    // // color: #fff;
-    // text-shadow: 0 0 20px #000;
-    // strong {
-    //   display: block;
-    //   font-size: 1.85em;
-    //   font-weight: normal;
-    //   letter-spacing: -4px;
-    // }
     padding-bottom: 1em;
   }
   .instructions {
@@ -210,15 +199,22 @@ h1, h2, h3, h4, h5, h6 {
     }
   }
 }
-.fluid .content {
-  height: 760px; //fluid.app
-}
 
+
+
+.fluid { 
+  .content {
+    height: 760px; //fluid.app
+  }
+  .items {
+    padding-top: 2px;
+  }
+}
 
 .items {
   width: 454px + 1018;
   float: left;
-  padding: 2px 15px 0 0;
+  padding: 6px 15px 0 0;
   // border-right: 1px dashed $divider;
   li {
     width: 10%;
@@ -248,7 +244,7 @@ h1, h2, h3, h4, h5, h6 {
 .activated {
   bottom: 0;
   border-top: 1px dashed $divider;
-  margin-top: 0.8em;
+  margin-top: 0.3em;
 }
 
 

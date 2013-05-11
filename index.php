@@ -67,7 +67,7 @@ function getsheet($odnumber) {
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <title>Isaac's Cheatsheet</title>
-        <meta name="description" content="The Binding of Isaac Cheatsheet">
+        <meta name="description" content="The Binding of Isaac Cheatsheet. Isaac's Cheatsheet lists all items with descriptions laid out to sit behind the game window for east reference. Download the Mac OS X application for even easier access.">
         <meta name="viewport" content="width=1920">
 
         <link href="favicon.png" rel="shortcut icon"/>
