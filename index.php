@@ -9,7 +9,8 @@
 
 function getsheet($odnumber) {
     // https://gist.github.com/pamelafox/770584
-    // http://damolab.blogspot.ca/2011/03/od6-and-finding-other-worksheet-ids.html    
+    // http://damolab.blogspot.ca/2011/03/od6-and-finding-other-worksheet-ids.html
+    // https://spreadsheets.google.com/feeds/worksheets/0AlMQBNMXy71CdHQ2VDBmbG5yLVhHLUVpdk5yV0hOWWc/private/full   
     // oda - items
     // od6 - activated
     // odb - trinkets
@@ -104,7 +105,7 @@ function getsheet($odnumber) {
                     </section>
 
                     <section class='app'>
-                        <a href="http://www.mediafire.com/?3418yrzz71nh6t7">
+                        <a href="http://www.mediafire.com/?lexqbafe4245qde">
                             <img src='img/osx-icon.png'>
                             <h5>Download<br>the Mac OS X app.</h5>
                         </a>
@@ -144,6 +145,12 @@ function getsheet($odnumber) {
                 <ul class='slats'>
                     <li><h2>Activated</h2></li>
                     <?php echo getsheet('od6'); ?>
+                </ul>
+            </div>
+            <div class='pills'>
+                <ul class='slats'>
+                    <li><h2>Pills</h2></li>
+                    <?php echo getsheet('od5'); ?>
                 </ul>
             </div>
             <div class='tarot'>

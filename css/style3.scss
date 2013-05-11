@@ -104,7 +104,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-.activated, .items, .tarot, .trinkets, .gallery {
+.activated, .items, .tarot, .trinkets, .pills, .gallery {
   float: left;
   overflow: hidden;
   position: relative;
@@ -238,7 +238,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
-.activated, .trinkets {
+.activated, .trinkets, .pills {
   padding-top: 0.3em;
   width: 442px;
   // text-align: center;
@@ -249,7 +249,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
-.activated {
+.activated, .pills {
   bottom: 0;
   border-top: 1px dashed $divider;
   margin-top: 0.3em;

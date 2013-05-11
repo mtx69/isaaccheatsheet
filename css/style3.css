@@ -88,11 +88,11 @@ h1, h2, h3, h4, h5, h6 {
     .slats li h3, .slats li p {
       margin: 0 0 0 29px; }
 
-.activated, .items, .tarot, .trinkets, .gallery {
+.activated, .items, .tarot, .trinkets, .pills, .gallery {
   float: left;
   overflow: hidden;
   position: relative; }
-  .activated ul, .items ul, .tarot ul, .trinkets ul, .gallery ul {
+  .activated ul, .items ul, .tarot ul, .trinkets ul, .pills ul, .gallery ul {
     position: relative;
     z-index: 6;
     font-size: 0; }
@@ -190,13 +190,13 @@ h1, h2, h3, h4, h5, h6 {
     height: 180px;
     content: ''; }
 
-.activated, .trinkets {
+.activated, .trinkets, .pills {
   padding-top: 0.3em;
   width: 442px; }
-  .activated li, .trinkets li {
+  .activated li, .trinkets li, .pills li {
     width: 32%; }
 
-.activated {
+.activated, .pills {
   bottom: 0;
   border-top: 1px dashed rgba(0, 0, 0, 0.35);
   margin-top: 0.3em; }
