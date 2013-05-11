@@ -76,7 +76,7 @@ h1, h2, h3, h4, h5, h6 {
     .slats li .icon {
       width: 25px;
       float: left;
-      margin: 0 5px 0; }
+      margin: 0; }
     .slats li img {
       margin: 0 auto;
       display: block;
@@ -86,7 +86,7 @@ h1, h2, h3, h4, h5, h6 {
     .slats li p {
       line-height: 1; }
     .slats li h3, .slats li p {
-      margin: 0 0 0 35px; }
+      margin: 0 0 0 29px; }
 
 .activated, .items, .tarot, .trinkets, .gallery {
   float: left;
@@ -171,6 +171,8 @@ h1, h2, h3, h4, h5, h6 {
   height: 760px; }
 .fluid .items {
   padding-top: 2px; }
+.fluid .slats li {
+  padding: 0.3em 0 0.4em; }
 
 .items {
   width: 1472px;
@@ -206,9 +208,9 @@ h1, h2, h3, h4, h5, h6 {
   .tarot li {
     width: 7%; }
   .tarot .slats .icon {
-    width: 15px; }
+    width: 18px; }
   .tarot .slats h3, .tarot .slats p {
-    margin: 0 0 0 15px; }
+    margin: 0 0 0 19px; }
 
 .gallery {
   display: none;

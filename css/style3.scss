@@ -64,7 +64,6 @@ h1, h2, h3, h4, h5, h6 {
     padding: 0.3em 0 0.3em;
     text-indent: 0;
     list-style-type: none;
-    // overflow: hidden;
     text-align: left;
     display: inline-block;
     vertical-align: top;
@@ -87,7 +86,7 @@ h1, h2, h3, h4, h5, h6 {
     .icon {
       width: 25px;
       float: left;
-      margin: 0 5px 0;
+      margin: 0;
     }
     img {
       margin: 0 auto;
@@ -100,7 +99,7 @@ h1, h2, h3, h4, h5, h6 {
       line-height: 1;
     }
     h3, p {
-      margin: 0 0 0 35px;
+      margin: 0 0 0 29px;
     }
   }
 }
@@ -168,7 +167,6 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0 2em 2em;
     padding: 1.75em 2em 1em;
     text-align: left;
-    // border: 2px dashed rgba(255,255,255, .3);
     border-radius: 2em;
     background: rgba(0,0,0,.4);
   }
@@ -208,6 +206,11 @@ h1, h2, h3, h4, h5, h6 {
   }
   .items {
     padding-top: 2px;
+  }
+  .slats {
+    li {
+      padding: 0.3em 0 0.4em;
+    }
   }
 }
 
@@ -251,7 +254,6 @@ h1, h2, h3, h4, h5, h6 {
 .tarot {
   width: 454px + 1018;
   width: 100%;
-  // bottom: 0;
   border-top: 1px dashed $divider;
   padding-top: .3em;
   margin-top: .3em;
@@ -260,10 +262,10 @@ h1, h2, h3, h4, h5, h6 {
   }
   .slats {
     .icon {
-      width: 15px;
+      width: 18px;
     }
     h3, p {
-      margin: 0 0 0 15px;
+      margin: 0 0 0 19px;
     }    
   }
 }
