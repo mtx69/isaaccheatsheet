@@ -34,16 +34,16 @@ function getsheet($odnumber) {
       $shortname = strtolower(preg_replace("/[^A-Za-z0-9\-]/", '', $dashed));
 
 
-      $items .= "<li id='$shortname'>";
+      $items .= "<li id='$shortname'><div class='icon'>";
 
       $pathtoimg = "img/all/{$shortname}.png";
       if (file_exists($pathtoimg)) {
-        $items .= "<div class='icon'><img src='{$pathtoimg}'></div>";
+        $items .= "<img src='{$pathtoimg}'>";
       }
 
 
 
-      $items .= "<h3>$item</h3>";
+      $items .= "</div><h3>$item</h3>";
 
       $items .= "<p>" . ($row->{'gsx$description'}->{'$t'}). "</p></li>\n";
       }
@@ -149,7 +149,7 @@ function getsheet($odnumber) {
             </div>
             <div class='pills'>
                 <ul class='slats'>
-                    <li><h2>Pills</h2></li>
+                    <li><h2>Pills</h2><p>Remember! Colors change every game.</p></li>
                     <?php echo getsheet('od5'); ?>
                 </ul>
             </div>

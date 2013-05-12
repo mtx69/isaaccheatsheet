@@ -255,6 +255,75 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 0.3em;
 }
 
+@-webkit-keyframes pillpoppin {
+   from { background-position:   0 0px; }
+     to { background-position: 0 -150px; }
+}
+@-moz-keyframes pillpoppin {
+   from { background-position:   0 0px; }
+     to { background-position: 0 -150px; }
+}
+@-o-keyframes pillpoppin {
+   from { background-position:   0 0px; }
+     to { background-position: 0 -150px; }
+}
+@keyframes pillpoppin {
+   from { background-position:   0 0px; }
+     to { background-position: 0 -150px; }
+}
+.pills {
+  .slats li {
+    &:first-child {
+      width: 100%;
+      h2, p {
+        display: inline;
+      }
+      p {
+        margin-left: 0;
+      }
+    }
+    .icon {
+      background-image: url(../img/pills-sprite.png);
+      height: 25px;
+    }
+    &:nth-child(2) .icon {
+      -webkit-animation: pillpoppin 24s steps(6) infinite;
+      -moz-animation: pillpoppin 24s steps(6) infinite;
+      -o-animation: pillpoppin 24s steps(6) infinite;
+      animation: pillpoppin 24s steps(6) infinite;
+    }
+    &:nth-child(3) .icon {
+      -webkit-animation: pillpoppin 24s -4.1s steps(6) infinite;
+      -moz-animation: pillpoppin 24s -4.1s steps(6) infinite;
+      -o-animation: pillpoppin 24s -4.1s steps(6) infinite;
+      animation: pillpoppin 24s -4.1s steps(6) infinite;
+    }
+    &:nth-child(4) .icon {
+      -webkit-animation: pillpoppin 24s -8s steps(6) infinite;
+      -moz-animation: pillpoppin 24s -8s steps(6) infinite;
+      -o-animation: pillpoppin 24s -8s steps(6) infinite;
+      animation: pillpoppin 24s -8s steps(6) infinite;
+    }
+    &:nth-child(5) .icon {
+      -webkit-animation: pillpoppin 24s -12.1s steps(6) infinite;
+      -moz-animation: pillpoppin 24s -12.1s steps(6) infinite;
+      -o-animation: pillpoppin 24s -12.1s steps(6) infinite;
+      animation: pillpoppin 24s -12.1s steps(6) infinite;
+    }
+    &:nth-child(6) .icon {
+      -webkit-animation: pillpoppin 24s -16s steps(6) infinite;
+      -moz-animation: pillpoppin 24s -16s steps(6) infinite;
+      -o-animation: pillpoppin 24s -16s steps(6) infinite;
+      animation: pillpoppin 24s -16s steps(6) infinite;
+    }
+    &:nth-child(7) .icon {
+      -webkit-animation: pillpoppin 24s -19.8s steps(6) infinite;
+      -moz-animation: pillpoppin 24s -19.8s steps(6) infinite;
+      -o-animation: pillpoppin 24s -19.8s steps(6) infinite;
+      animation: pillpoppin 24s -19.8s steps(6) infinite;
+    }
+  }
+}
 
 .tarot {
   width: 454px + 1018;
