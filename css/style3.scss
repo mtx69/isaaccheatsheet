@@ -3,7 +3,7 @@
 $yellow: #ffb;
 $brown: darken(rgb(77,62,50),4%);
 $ltbrown: lighten(rgb(77,62,50),35%);
-
+$red: #f00;
 $divider: transparentize(#000,.65);
 
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
@@ -56,79 +56,28 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
-.slats {
-  margin: 0;
-  padding: 0;
-  li {
-    margin: 0;
-    padding: 0.3em 0 0.3em;
-    text-indent: 0;
-    list-style-type: none;
-    text-align: left;
-    display: inline-block;
-    vertical-align: top;
-    font-size: 8px;
-    h2 {
-      font-size: 1.7em;
-      margin: 0;
-      padding: 0 .4em;
-      color: $ltbrown;
-      text-shadow: 0 -2px 0 #000;
-    }
-    h3 {
-      font-size: 1em;
-      font-weight: bold;
-      line-height: 1;
-      margin: 0;
-      padding: 0 0 2px;
-      color: #fff;
-    }
-    .icon {
-      width: 25px;
-      float: left;
-      margin: 0;
-    }
-    img {
-      margin: 0 auto;
-      display: block;
-      max-width: 25px;
-      max-height: 25px;
-      max-height: 20px;
-    }
-    p {
-      line-height: 1;
-    }
-    h3, p {
-      margin: 0 0 0 29px;
-    }
-  }
-}
 
-.activated, .items, .tarot, .trinkets, .pills, .gallery {
-  float: left;
-  overflow: hidden;
-  position: relative;
-  ul {
-    position: relative;
-    z-index: 6;
-    font-size: 0;
-  }
-}
 .content {
   position: relative;
   float: right;
   width: 1024px;
-  margin-right: -1em;
   height: 710px; //web
+  margin: 0 -1em 0 0;
   border: 2px dashed rgba(255,255,255, .3);
   border-top-width: 0;
   border-radius: 0  0 2em 2em;
   text-align: center;
-  padding-top: 3em;
   z-index: 1000;
   font-size: 11px;
   h1 {
-    padding-bottom: 1em;
+    // width: 503px;
+    height: 127px;
+    margin: 0 auto;
+    padding: 0;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    background: url(../img/isaacs-cheatsheet-logo.png) no-repeat 50% 0;
   }
   .instructions {
     font-family: 'Delius Unicase', verdana, sans-serif;
@@ -200,6 +149,73 @@ h1, h2, h3, h4, h5, h6 {
 
 
 
+
+.slats {
+  margin: 0;
+  padding: 0;
+  li {
+    margin: 0;
+    padding: 0.3em 0 0.3em;
+    text-indent: 0;
+    list-style-type: none;
+    text-align: left;
+    display: inline-block;
+    vertical-align: top;
+    font-size: 8px;
+    h2 {
+      font-size: 1.7em;
+      margin: 0;
+      padding: 0 .4em;
+      color: $ltbrown;
+      text-shadow: 0 -2px 0 #000;
+    }
+    h3 {
+      font-size: 1em;
+      font-weight: bold;
+      line-height: 1;
+      margin: 0;
+      padding: 0 0 2px;
+      color: #fff;
+    }
+    .icon {
+      width: 25px;
+      float: left;
+      margin: 0;
+    }
+    img {
+      margin: 0 auto;
+      display: block;
+      max-width: 25px;
+      max-height: 25px;
+      max-height: 20px;
+    }
+    p {
+      line-height: 1;
+    }
+    h3, p {
+      margin: 0 0 0 29px;
+    }
+  }
+}
+
+.activated, .main, .tarot, .trinkets, .pills, .gallery {
+  float: left;
+  overflow: hidden;
+  position: relative;
+}
+.activated, .item, .tarot, .trinkets, .pills, .gallery {
+  h2 {
+    position: absolute;
+    margin: 0;
+    padding: 0 0 0 .5em;
+  }
+  ul {
+    position: relative;
+    z-index: 6;
+    font-size: 0;
+  }
+}
+
 .fluid { 
   .content {
     height: 760px; //fluid.app
@@ -207,25 +223,29 @@ h1, h2, h3, h4, h5, h6 {
   .items {
     padding-top: 2px;
   }
-  .slats {
-    li {
-      padding: 0.3em 0 0.4em;
-    }
-  }
-  .activated, .trinkets {
-    li {
-      width: 33%;
-    }
-  }
+  // .slats {
+  //   li {
+  //     padding: 0.3em 0 0.4em;
+  //   }
+  // }
+  // .activated, .trinkets {
+  //   li {
+  //     width: 33%;
+  //   }
+  // }
 }
 
-.items {
+.main {
   width: 454px + 1018;
   float: left;
   padding: 6px 15px 0 0;
   // border-right: 1px dashed $divider;
-  li {
+  .item li {
     width: 10%;
+    &:first-child {
+      width: 20%;
+      padding-left: 10%;
+    }
   }
   &:after {
     position: absolute;
@@ -241,10 +261,12 @@ h1, h2, h3, h4, h5, h6 {
 .activated, .trinkets, .pills {
   padding-top: 0.3em;
   width: 442px;
-  // text-align: center;
   li {
-    width: 32%;
-    // padding-top: 0.9em;
+    width: 25%;
+    &:first-child {
+      width: 50%;
+      padding-left: 25%;      
+    }
   }
 }
 
@@ -273,50 +295,47 @@ h1, h2, h3, h4, h5, h6 {
 }
 .pills {
   .slats li {
-    &:first-child {
-      width: 100%;
-      h2, p {
-        display: inline;
-      }
-      p {
-        margin-left: 0;
-      }
+    h3, p {
+      // margin-left: 20px
     }
     .icon {
       background-image: url(../img/pills-sprite.png);
       height: 25px;
+      // height: 20px;
+      // width: 20px;
+      // background-size: 20px 120px;
     }
-    &:nth-child(2) .icon {
+    &:nth-child(6n+1) .icon {
       -webkit-animation: pillpoppin 24s steps(6) infinite;
       -moz-animation: pillpoppin 24s steps(6) infinite;
       -o-animation: pillpoppin 24s steps(6) infinite;
       animation: pillpoppin 24s steps(6) infinite;
     }
-    &:nth-child(3) .icon {
+    &:nth-child(6n+2) .icon {
       -webkit-animation: pillpoppin 24s -4.1s steps(6) infinite;
       -moz-animation: pillpoppin 24s -4.1s steps(6) infinite;
       -o-animation: pillpoppin 24s -4.1s steps(6) infinite;
       animation: pillpoppin 24s -4.1s steps(6) infinite;
     }
-    &:nth-child(4) .icon {
+    &:nth-child(6n+3) .icon {
       -webkit-animation: pillpoppin 24s -8s steps(6) infinite;
       -moz-animation: pillpoppin 24s -8s steps(6) infinite;
       -o-animation: pillpoppin 24s -8s steps(6) infinite;
       animation: pillpoppin 24s -8s steps(6) infinite;
     }
-    &:nth-child(5) .icon {
+    &:nth-child(6n+4) .icon {
       -webkit-animation: pillpoppin 24s -12.1s steps(6) infinite;
       -moz-animation: pillpoppin 24s -12.1s steps(6) infinite;
       -o-animation: pillpoppin 24s -12.1s steps(6) infinite;
       animation: pillpoppin 24s -12.1s steps(6) infinite;
     }
-    &:nth-child(6) .icon {
+    &:nth-child(6n+5) .icon {
       -webkit-animation: pillpoppin 24s -16s steps(6) infinite;
       -moz-animation: pillpoppin 24s -16s steps(6) infinite;
       -o-animation: pillpoppin 24s -16s steps(6) infinite;
       animation: pillpoppin 24s -16s steps(6) infinite;
     }
-    &:nth-child(7) .icon {
+    &:nth-child(6n+6) .icon {
       -webkit-animation: pillpoppin 24s -19.8s steps(6) infinite;
       -moz-animation: pillpoppin 24s -19.8s steps(6) infinite;
       -o-animation: pillpoppin 24s -19.8s steps(6) infinite;
@@ -333,6 +352,10 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: .3em;
   li {
     width: 7%;
+    &:first-child {
+      width: 14%;
+      padding-left: 7%;
+    }
   }
   .slats {
     .icon {

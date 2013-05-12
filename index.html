@@ -24,18 +24,21 @@
 
         <div id='wrapper'>
             <!-- <img src="img/screenshot.png" class="screenshot"/> -->
-            <div class='items'>
+
+
+            <div class='main'>
+
                 <div class='content'>
 
-                    <h1><img src="img/isaacs-cheatsheet-logo.png" alt="Isaac's Cheatsheet"></h1>
+                    <h1>The Binding of <strong>Isaac's Cheatsheet</strong></h1>
                     
                     <div class='instructions'>
-                    <h4>instructions:</h4>
-                    <ol>
-                    <li>Launch The Binding of Isaac.</li>
-                    <li>Put the game window over this dotted box. <i>(as high up as it can go)</i></li>
-                    <li>Kick Mom's ass!</li>
-                    </ol>
+                        <h4>instructions:</h4>
+                        <ol>
+                            <li>Launch The Binding of Isaac.</li>
+                            <li>Put the game window over this dotted box. <i>(as high up as it can go)</i></li>
+                            <li>Kick Mom's ass!</li>
+                        </ol>
                     </div>
                     
                     <section>
@@ -59,9 +62,11 @@
 
                     <p>Thank you reddit contributors (and whoever ripped those sprites and put them on mediafire)! Give all your monies to Ed McMillen and Florian Himsl.</p>
 
-                </div>
+                </div><!--.content-->
+                <div class='item'>
+                <h2>Passive Items</h2>
                 <ul class='slats'>
-                    <li><h2>Items</h2></li>
+                    <!-- <li><h2>Items</h2></li> -->
                     <li id='3'><div class='icon'><img src='img/all/3.png'></div><h3><3</h3><p>HP +1, 100% heal</p></li>
 <li id='1up'><div class='icon'><img src='img/all/1up.png'></div><h3>1UP</h3><p>Life +1</p></li>
 <li id='3-dollar-bill'><div class='icon'><img src='img/all/3-dollar-bill.png'></div><h3>3 Dollar Bill</h3><p>Effect changes/rm</p></li>
@@ -207,21 +212,18 @@
 <li id='wooden-spoon'><div class='icon'><img src='img/all/wooden-spoon.png'></div><h3>Wooden Spoon</h3><p>Spd +2</p></li>
 <li id='x-ray-vision'><div class='icon'><img src='img/all/x-ray-vision.png'></div><h3>X-ray Vision</h3><p>Secret rms</p></li>
                 </ul>
+                </div>
             </div>
 
-            <div class="gallery">
-                <ul class='slats'>
-                                    </ul>
-            </div>
 
             <div class='trinkets'>
+                <h2>Trinkets</h2>
                 <ul class='slats'>
-                    <li><h2>Trinkets</h2></li>
                     <li id='s-soul'><div class='icon'><img src='img/all/s-soul.png'></div><h3>???'s Soul</h3><p>Spectral shooting buddy</p></li>
 <li id='ace-of-spades'><div class='icon'><img src='img/all/ace-of-spades.png'></div><h3>Ace of Spades</h3><p>Chance++ finding Tarots/Suits</p></li>
 <li id='bloody-penny'><div class='icon'><img src='img/all/bloody-penny.png'></div><h3>Bloody Penny</h3><p>50% of &frac12; &hearts; w/ $</p></li>
 <li id='burnt-penny'><div class='icon'><img src='img/all/burnt-penny.png'></div><h3>Burnt Penny</h3><p>50% of bomb w/ $</p></li>
-<li id='cains-eye'><div class='icon'><img src='img/all/cains-eye.png'></div><h3>Cain's Eye</h3><p>25% of Compass on level start</p></li>
+<li id='cains-eye'><div class='icon'><img src='img/all/cains-eye.png'></div><h3>Cain's Eye</h3><p>25% Compass on lvl start</p></li>
 <li id='cancer'><div class='icon'><img src='img/all/cancer.png'></div><h3>Cancer</h3><p>Shot speed++</p></li>
 <li id='childs-heart'><div class='icon'><img src='img/all/childs-heart.png'></div><h3>Child's Heart</h3><p>Chance of &hearts; on clearing rm</p></li>
 <li id='counterfeit-penny'><div class='icon'><img src='img/all/counterfeit-penny.png'></div><h3>Counterfeit Penny</h3><p>50% of ++$ value. (Can be in Golden Poop)</p></li>
@@ -232,29 +234,30 @@
 <li id='fish-head'><div class='icon'><img src='img/all/fish-head.png'></div><h3>Fish Head</h3><p>Attack flies on hit.</p></li>
 <li id='goat-hoof'><div class='icon'><img src='img/all/goat-hoof.png'></div><h3>Goat Hoof</h3><p>Spd++</p></li>
 <li id='isaacs-head'><div class='icon'><img src='img/all/isaacs-head.png'></div><h3>Isaac's Head</h3><p>Pierce shooting buddy.</p></li>
-<li id='isaacs-fork'><div class='icon'><img src='img/all/isaacs-fork.png'></div><h3>Isaac's Fork</h3><p>10% of &frac12; heal on clearing rm.</p></li>
-<li id='judas-tongue'><div class='icon'><img src='img/all/judas-tongue.png'></div><h3>Judas' Tongue</h3><p>Items cost 1 &hearts; in Devil Rm. Not soul &hearts;</p></li>
+<li id='isaacs-fork'><div class='icon'><img src='img/all/isaacs-fork.png'></div><h3>Isaac's Fork</h3><p>10% of &frac12; heal on rm clear</p></li>
+<li id='judas-tongue'><div class='icon'><img src='img/all/judas-tongue.png'></div><h3>Judas' Tongue</h3><p>Items cost 1 red &hearts; in Devil rm</p></li>
 <li id='left-hand'><div class='icon'><img src='img/all/left-hand.png'></div><h3>Left Hand</h3><p>Chests turn to Red Chests</p></li>
-<li id='libery-cap'><div class='icon'><img src='img/all/libery-cap.png'></div><h3>Libery Cap</h3><p>25% no effect on mushrooms.</p></li>
-<li id='lucky-toe'><div class='icon'><img src='img/all/lucky-toe.png'></div><h3>Lucky Toe</h3><p>Chance++ drop on clearing room.</p></li>
+<li id='libery-cap'><div class='icon'><img src='img/all/libery-cap.png'></div><h3>Libery Cap</h3><p>25% no effect w/ shrooms.</p></li>
+<li id='lucky-toe'><div class='icon'><img src='img/all/lucky-toe.png'></div><h3>Lucky Toe</h3><p>Chance+ drop on rm clear</p></li>
 <li id='maggys-faith'><div class='icon'><img src='img/all/maggys-faith.png'></div><h3>Maggy's Faith</h3><p>Eternal &hearts;/level.</p></li>
-<li id='match-stick'><div class='icon'><img src='img/all/match-stick.png'></div><h3>Match Stick</h3><p>Chance++ bombs on clearing room.</p></li>
+<li id='match-stick'><div class='icon'><img src='img/all/match-stick.png'></div><h3>Match Stick</h3><p>Chance+ bombs on rm clear</p></li>
 <li id='missing-page'><div class='icon'><img src='img/all/missing-page.png'></div><h3>Missing Page</h3><p>5% of dmg+++ on hit.</p></li>
-<li id='moms-pearl'><div class='icon'><img src='img/all/moms-pearl.png'></div><h3>Mom's Pearl</h3><p>Chance++ red &hearts; turns to soul &hearts;.</p></li>
-<li id='pinky-eye'><div class='icon'><img src='img/all/pinky-eye.png'></div><h3>Pinky Eye</h3><p>10% shoot poison.</p></li>
+<li id='moms-pearl'><div class='icon'><img src='img/all/moms-pearl.png'></div><h3>Mom's Pearl</h3><p>Chance+ &hearts; turn to soul &hearts;</p></li>
+<li id='pinky-eye'><div class='icon'><img src='img/all/pinky-eye.png'></div><h3>Pinky Eye</h3><p>10% poison shot</p></li>
 <li id='polaroid'><div class='icon'><img src='img/all/polaroid.png'></div><h3>Polaroid</h3><p>On &frac12; &hearts; get shield</p></li>
 <li id='push-pin'><div class='icon'><img src='img/all/push-pin.png'></div><h3>Push Pin</h3><p>10% spectral or piercing tear.</p></li>
 <li id='red-patch'><div class='icon'><img src='img/all/red-patch.png'></div><h3>Red Patch</h3><p>Chance dmg++ on hit.</p></li>
-<li id='rusted-key'><div class='icon'><img src='img/all/rusted-key.png'></div><h3>Rusted Key</h3><p>Chance++ keys/chests on clearing rm.</p></li>
+<li id='rusted-key'><div class='icon'><img src='img/all/rusted-key.png'></div><h3>Rusted Key</h3><p>Chance++ keys/chests on rm clear</p></li>
 <li id='safety-cap'><div class='icon'><img src='img/all/safety-cap.png'></div><h3>Safety Cap</h3><p>Chance++ pills.</p></li>
-<li id='samsons-lock'><div class='icon'><img src='img/all/samsons-lock.png'></div><h3>Samson's Lock</h3><p>Chance++ dmg++ on kills.</p></li>
-<li id='tick'><div class='icon'><img src='img/all/tick.png'></div><h3>Tick</h3><p>-15% boss health, heal +1. Cannot drop this.</p></li>
-<li id='umbilical-cord'><div class='icon'><img src='img/all/umbilical-cord.png'></div><h3>Umbilical Cord</h3><p>On &frac12; &hearts;, get Little Steve.</p></li>
+<li id='samsons-lock'><div class='icon'><img src='img/all/samsons-lock.png'></div><h3>Samson's Lock</h3><p>Chance+ dmg+ on kills</p></li>
+<li id='tick'><div class='icon'><img src='img/all/tick.png'></div><h3>Tick</h3><p>-15% boss health, heal +1. Cannot drop this</p></li>
+<li id='umbilical-cord'><div class='icon'><img src='img/all/umbilical-cord.png'></div><h3>Umbilical Cord</h3><p>On &frac12; &hearts;, get Little Steve</p></li>
                 </ul>
             </div>
+
             <div class='activated'>
+                <h2>Activated</h2>
                 <ul class='slats'>
-                    <li><h2>Activated</h2></li>
                     <li id='anarchist-cookbook'><div class='icon'><img src='img/all/anarchist-cookbook.png'></div><h3>Anarchist Cookbook</h3><p>Spawn 6 Troll Bombs</p></li>
 <li id='bean'><div class='icon'><img src='img/all/bean.png'></div><h3>Bean</h3><p>Dmg/Poison fart</p></li>
 <li id='best-friend'><div class='icon'><img src='img/all/best-friend.png'></div><h3>Best Friend</h3><p>Buddy with delayed explode</p></li>
@@ -276,8 +279,8 @@
 <li id='doctors-remote'><div class='icon'><img src='img/all/doctors-remote.png'></div><h3>Doctor's Remote</h3><p>Target w/ arrow keys, space to fire.</p></li>
 <li id='forget-me-now'><div class='icon'><img src='img/all/forget-me-now.png'></div><h3>Forget Me Now</h3><p>Lvl end, regen lvl</p></li>
 <li id='gamekid'><div class='icon'><img src='img/all/gamekid.png'></div><h3>Gamekid</h3><p>Dmg touch, &frac12; &hearts;/2 killed</p></li>
-<li id='guppys-head'><div class='icon'><img src='img/all/guppys-head.png'></div><h3>Guppy's Head</h3><p>Spawn 2-4 blue (attack) flies</p></li>
-<li id='guppys-paw'><div class='icon'><img src='img/all/guppys-paw.png'></div><h3>Guppy's Paw</h3><p>&hearts; container--, 3 Soul &hearts;</p></li>
+<li id='guppys-head'><div class='icon'><img src='img/all/guppys-head.png'></div><h3>Guppy's Head</h3><p>Spawn 2-4 blue flies</p></li>
+<li id='guppys-paw'><div class='icon'><img src='img/all/guppys-paw.png'></div><h3>Guppy's Paw</h3><p>&hearts; container-, 3 soul &hearts;</p></li>
 <li id='hourglass'><div class='icon'><img src='img/all/hourglass.png'></div><h3>Hourglass</h3><p>Slows ememies (7.5s)</p></li>
 <li id='iv-bag'><div class='icon'><img src='img/all/iv-bag.png'></div><h3>IV Bag</h3><p>Swap &hearts; for $</p></li>
 <li id='kamikaze'><div class='icon'><img src='img/all/kamikaze.png'></div><h3>Kamikaze!</h3><p>Explosion, -1 &hearts;</p></li>
@@ -310,19 +313,28 @@
                 </ul>
             </div>
             <div class='pills'>
+                <h2>Pills</h2>
                 <ul class='slats'>
-                    <li><h2>Pills</h2><p>Remember! Colors change every game.</p></li>
-                    <li id='bad-gas'><div class='icon'></div><h3>Bad Gas</h3><p>Fart poisonous gas</p></li>
+                    <li id='bad-gas'><div class='icon'></div><h3>Bad Gas</h3><p>Poison radius</p></li>
 <li id='bad-trip'><div class='icon'></div><h3>Bad Trip</h3><p>No effect</p></li>
 <li id='balls-of-steel'><div class='icon'></div><h3>Balls of Steel</h3><p>2 Soul Hearts</p></li>
-<li id='bombs-are-keys'><div class='icon'></div><h3>Bombs are Keys</h3><p>For every key you get the same amount of bombs</p></li>
-<li id='explosive-diarrhea-oh-no'><div class='icon'></div><h3>Explosive Diarrhea! (Oh, No!)</h3><p>dmg radius</p></li>
-<li id='full-health'><div class='icon'></div><h3>Full Health</h3><p>Restore full health</p></li>
+<li id='bombs-are-keys'><div class='icon'></div><h3>Bombs are Keys</h3><p>Swap bombs for keys</p></li>
+<li id='explosive-diarrhea-oh-no'><div class='icon'></div><h3>Explosive Diarrhea! (Oh, No!)</h3><p>Dmg radius</p></li>
+<li id='friends-till-the-end'><div class='icon'></div><h3>Friends Till The End!</h3><p>3 homing flies</p></li>
+<li id='full-health'><div class='icon'></div><h3>Full Health</h3><p>100% HP</p></li>
+<li id='health-updown'><div class='icon'></div><h3>Health Up/Down</h3><p>&hearts +/-</p></li>
+<li id='i-found-pills'><div class='icon'></div><h3>I Found Pills</h3><p>No effect</p></li>
+<li id='pretty-fly'><div class='icon'></div><h3>Pretty Fly</h3><p>Fly orbits</p></li>
+<li id='puberty'><div class='icon'></div><h3>Puberty</h3><p>No effect</p></li>
+<li id='range-updown'><div class='icon'></div><h3>Range Up/Down</h3><p>Range +/-</p></li>
+<li id='speed-updown'><div class='icon'></div><h3>Speed Up/Down</h3><p>Speed +/-</p></li>
+<li id='tears-updown'><div class='icon'></div><h3>Tears Up/Down</h3><p>Rate +/-</p></li>
+<li id='telepills'><div class='icon'></div><h3>Telepills</h3><p>Rnd rm</p></li>
                 </ul>
             </div>
             <div class='tarot'>
+                <h2>Tarots</h2>
                 <ul class='slats'>
-                    <li><h2>Tarots</h2></li>
                     <li id='chariot'><div class='icon'><img src='img/all/chariot.png'></div><h3>Chariot</h3><p>Dmg touch, rnd item on rm clear</p></li>
 <li id='death'><div class='icon'><img src='img/all/death.png'></div><h3>Death</h3><p>Heavy dmg to all</p></li>
 <li id='devil'><div class='icon'><img src='img/all/devil.png'></div><h3>Devil</h3><p>Dmg++</p></li>

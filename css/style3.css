@@ -48,70 +48,26 @@ a {
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Delius Unicase', verdana, sans-serif; }
 
-.slats {
-  margin: 0;
-  padding: 0; }
-  .slats li {
-    margin: 0;
-    padding: 0.3em 0 0.3em;
-    text-indent: 0;
-    list-style-type: none;
-    text-align: left;
-    display: inline-block;
-    vertical-align: top;
-    font-size: 8px; }
-    .slats li h2 {
-      font-size: 1.7em;
-      margin: 0;
-      padding: 0 .4em;
-      color: #ae9683;
-      text-shadow: 0 -2px 0 black; }
-    .slats li h3 {
-      font-size: 1em;
-      font-weight: bold;
-      line-height: 1;
-      margin: 0;
-      padding: 0 0 2px;
-      color: #fff; }
-    .slats li .icon {
-      width: 25px;
-      float: left;
-      margin: 0; }
-    .slats li img {
-      margin: 0 auto;
-      display: block;
-      max-width: 25px;
-      max-height: 25px;
-      max-height: 20px; }
-    .slats li p {
-      line-height: 1; }
-    .slats li h3, .slats li p {
-      margin: 0 0 0 29px; }
-
-.activated, .items, .tarot, .trinkets, .pills, .gallery {
-  float: left;
-  overflow: hidden;
-  position: relative; }
-  .activated ul, .items ul, .tarot ul, .trinkets ul, .pills ul, .gallery ul {
-    position: relative;
-    z-index: 6;
-    font-size: 0; }
-
 .content {
   position: relative;
   float: right;
   width: 1024px;
-  margin-right: -1em;
   height: 710px;
+  margin: 0 -1em 0 0;
   border: 2px dashed rgba(255, 255, 255, 0.3);
   border-top-width: 0;
   border-radius: 0  0 2em 2em;
   text-align: center;
-  padding-top: 3em;
   z-index: 1000;
   font-size: 11px; }
   .content h1 {
-    padding-bottom: 1em; }
+    height: 127px;
+    margin: 0 auto;
+    padding: 0;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    background: url(../img/isaacs-cheatsheet-logo.png) no-repeat 50% 0; }
   .content .instructions {
     font-family: 'Delius Unicase', verdana, sans-serif;
     font-size: 2em;
@@ -167,22 +123,75 @@ h1, h2, h3, h4, h5, h6 {
       box-shadow: inset 0 -1px 4px yellow, 0 3px 5px black;
       text-shadow: 0 -1px 0 black; }
 
+.slats {
+  margin: 0;
+  padding: 0; }
+  .slats li {
+    margin: 0;
+    padding: 0.3em 0 0.3em;
+    text-indent: 0;
+    list-style-type: none;
+    text-align: left;
+    display: inline-block;
+    vertical-align: top;
+    font-size: 8px; }
+    .slats li h2 {
+      font-size: 1.7em;
+      margin: 0;
+      padding: 0 .4em;
+      color: #ae9683;
+      text-shadow: 0 -2px 0 black; }
+    .slats li h3 {
+      font-size: 1em;
+      font-weight: bold;
+      line-height: 1;
+      margin: 0;
+      padding: 0 0 2px;
+      color: #fff; }
+    .slats li .icon {
+      width: 25px;
+      float: left;
+      margin: 0; }
+    .slats li img {
+      margin: 0 auto;
+      display: block;
+      max-width: 25px;
+      max-height: 25px;
+      max-height: 20px; }
+    .slats li p {
+      line-height: 1; }
+    .slats li h3, .slats li p {
+      margin: 0 0 0 29px; }
+
+.activated, .main, .tarot, .trinkets, .pills, .gallery {
+  float: left;
+  overflow: hidden;
+  position: relative; }
+
+.activated h2, .item h2, .tarot h2, .trinkets h2, .pills h2, .gallery h2 {
+  position: absolute;
+  margin: 0;
+  padding: 0 0 0 .5em; }
+.activated ul, .item ul, .tarot ul, .trinkets ul, .pills ul, .gallery ul {
+  position: relative;
+  z-index: 6;
+  font-size: 0; }
+
 .fluid .content {
   height: 760px; }
 .fluid .items {
   padding-top: 2px; }
-.fluid .slats li {
-  padding: 0.3em 0 0.4em; }
-.fluid .activated li, .fluid .trinkets li {
-  width: 33%; }
 
-.items {
+.main {
   width: 1472px;
   float: left;
   padding: 6px 15px 0 0; }
-  .items li {
+  .main .item li {
     width: 10%; }
-  .items:after {
+    .main .item li:first-child {
+      width: 20%;
+      padding-left: 10%; }
+  .main:after {
     position: absolute;
     bottom: 0;
     right: 0;
@@ -194,7 +203,10 @@ h1, h2, h3, h4, h5, h6 {
   padding-top: 0.3em;
   width: 442px; }
   .activated li, .trinkets li, .pills li {
-    width: 32%; }
+    width: 25%; }
+    .activated li:first-child, .trinkets li:first-child, .pills li:first-child {
+      width: 50%;
+      padding-left: 25%; }
 
 .activated, .pills {
   bottom: 0;
@@ -229,41 +241,35 @@ h1, h2, h3, h4, h5, h6 {
   to {
     background-position: 0 -150px; } }
 
-.pills .slats li:first-child {
-  width: 100%; }
-  .pills .slats li:first-child h2, .pills .slats li:first-child p {
-    display: inline; }
-  .pills .slats li:first-child p {
-    margin-left: 0; }
 .pills .slats li .icon {
   background-image: url(../img/pills-sprite.png);
   height: 25px; }
-.pills .slats li:nth-child(2) .icon {
+.pills .slats li:nth-child(6n+1) .icon {
   -webkit-animation: pillpoppin 24s steps(6) infinite;
   -moz-animation: pillpoppin 24s steps(6) infinite;
   -o-animation: pillpoppin 24s steps(6) infinite;
   animation: pillpoppin 24s steps(6) infinite; }
-.pills .slats li:nth-child(3) .icon {
+.pills .slats li:nth-child(6n+2) .icon {
   -webkit-animation: pillpoppin 24s -4.1s steps(6) infinite;
   -moz-animation: pillpoppin 24s -4.1s steps(6) infinite;
   -o-animation: pillpoppin 24s -4.1s steps(6) infinite;
   animation: pillpoppin 24s -4.1s steps(6) infinite; }
-.pills .slats li:nth-child(4) .icon {
+.pills .slats li:nth-child(6n+3) .icon {
   -webkit-animation: pillpoppin 24s -8s steps(6) infinite;
   -moz-animation: pillpoppin 24s -8s steps(6) infinite;
   -o-animation: pillpoppin 24s -8s steps(6) infinite;
   animation: pillpoppin 24s -8s steps(6) infinite; }
-.pills .slats li:nth-child(5) .icon {
+.pills .slats li:nth-child(6n+4) .icon {
   -webkit-animation: pillpoppin 24s -12.1s steps(6) infinite;
   -moz-animation: pillpoppin 24s -12.1s steps(6) infinite;
   -o-animation: pillpoppin 24s -12.1s steps(6) infinite;
   animation: pillpoppin 24s -12.1s steps(6) infinite; }
-.pills .slats li:nth-child(6) .icon {
+.pills .slats li:nth-child(6n+5) .icon {
   -webkit-animation: pillpoppin 24s -16s steps(6) infinite;
   -moz-animation: pillpoppin 24s -16s steps(6) infinite;
   -o-animation: pillpoppin 24s -16s steps(6) infinite;
   animation: pillpoppin 24s -16s steps(6) infinite; }
-.pills .slats li:nth-child(7) .icon {
+.pills .slats li:nth-child(6n+6) .icon {
   -webkit-animation: pillpoppin 24s -19.8s steps(6) infinite;
   -moz-animation: pillpoppin 24s -19.8s steps(6) infinite;
   -o-animation: pillpoppin 24s -19.8s steps(6) infinite;
@@ -277,6 +283,9 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: .3em; }
   .tarot li {
     width: 7%; }
+    .tarot li:first-child {
+      width: 14%;
+      padding-left: 7%; }
   .tarot .slats .icon {
     width: 18px; }
   .tarot .slats h3, .tarot .slats p {

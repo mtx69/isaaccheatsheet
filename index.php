@@ -85,18 +85,21 @@ function getsheet($odnumber) {
 
         <div id='wrapper'>
             <!-- <img src="img/screenshot.png" class="screenshot"/> -->
-            <div class='items'>
+
+
+            <div class='main'>
+
                 <div class='content'>
 
-                    <h1><img src="img/isaacs-cheatsheet-logo.png" alt="Isaac's Cheatsheet"></h1>
+                    <h1>The Binding of <strong>Isaac's Cheatsheet</strong></h1>
                     
                     <div class='instructions'>
-                    <h4>instructions:</h4>
-                    <ol>
-                    <li>Launch The Binding of Isaac.</li>
-                    <li>Put the game window over this dotted box. <i>(as high up as it can go)</i></li>
-                    <li>Kick Mom's ass!</li>
-                    </ol>
+                        <h4>instructions:</h4>
+                        <ol>
+                            <li>Launch The Binding of Isaac.</li>
+                            <li>Put the game window over this dotted box. <i>(as high up as it can go)</i></li>
+                            <li>Kick Mom's ass!</li>
+                        </ol>
                     </div>
                     
                     <section>
@@ -120,42 +123,39 @@ function getsheet($odnumber) {
 
                     <p>Thank you reddit contributors (and whoever ripped those sprites and put them on mediafire)! Give all your monies to Ed McMillen and Florian Himsl.</p>
 
-                </div>
+                </div><!--.content-->
+                <div class='item'>
+                <h2>Passive Items</h2>
                 <ul class='slats'>
-                    <li><h2>Items</h2></li>
+                    <!-- <li><h2>Items</h2></li> -->
                     <?php echo getsheet('oda'); ?>
                 </ul>
+                </div>
             </div>
 
-            <div class="gallery">
-                <ul class='slats'>
-                    <?php 
-                    // echo $gallery; 
-                    ?>
-                </ul>
-            </div>
 
             <div class='trinkets'>
+                <h2>Trinkets</h2>
                 <ul class='slats'>
-                    <li><h2>Trinkets</h2></li>
                     <?php echo getsheet('odb'); ?>
                 </ul>
             </div>
+
             <div class='activated'>
+                <h2>Activated</h2>
                 <ul class='slats'>
-                    <li><h2>Activated</h2></li>
                     <?php echo getsheet('od6'); ?>
                 </ul>
             </div>
             <div class='pills'>
+                <h2>Pills</h2>
                 <ul class='slats'>
-                    <li><h2>Pills</h2><p>Remember! Colors change every game.</p></li>
                     <?php echo getsheet('od5'); ?>
                 </ul>
             </div>
             <div class='tarot'>
+                <h2>Tarots</h2>
                 <ul class='slats'>
-                    <li><h2>Tarots</h2></li>
                     <?php echo getsheet('od7'); ?>
                 </ul>
             </div>
