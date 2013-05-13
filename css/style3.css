@@ -51,18 +51,19 @@ h1, h2, h3, h4, h5, h6 {
 .content {
   position: relative;
   float: right;
-  width: 1024px;
+  width: 1000px;
   height: 710px;
-  margin: 0 -1em 0 0;
+  margin: 0 24px 0 0;
   border: 2px dashed rgba(255, 255, 255, 0.3);
   border-top-width: 0;
   border-radius: 0  0 2em 2em;
   text-align: center;
   z-index: 1000;
-  font-size: 11px; }
+  font-size: 11px;
+  background: url(../img/blood.png) no-repeat 50% 0; }
   .content h1 {
     height: 127px;
-    margin: 0 auto;
+    margin: .75em auto 0;
     padding: 0;
     text-indent: 100%;
     white-space: nowrap;
@@ -184,13 +185,14 @@ h1, h2, h3, h4, h5, h6 {
 
 .main {
   width: 1472px;
-  float: left;
-  padding: 6px 15px 0 0; }
-  .main .item li {
-    width: 10%; }
-    .main .item li:first-child {
-      width: 20%;
-      padding-left: 10%; }
+  float: left; }
+  .main .item {
+    padding: 6px 15px 0 0; }
+    .main .item li {
+      width: 10%; }
+      .main .item li:first-child {
+        width: 20%;
+        padding-left: 10%; }
   .main:after {
     position: absolute;
     bottom: 0;

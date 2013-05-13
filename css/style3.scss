@@ -60,19 +60,20 @@ h1, h2, h3, h4, h5, h6 {
 .content {
   position: relative;
   float: right;
-  width: 1024px;
+  width: 1000px;
   height: 710px; //web
-  margin: 0 -1em 0 0;
+  margin: 0 24px 0 0;
   border: 2px dashed rgba(255,255,255, .3);
   border-top-width: 0;
   border-radius: 0  0 2em 2em;
   text-align: center;
   z-index: 1000;
   font-size: 11px;
+  background: url(../img/blood.png) no-repeat 50% 0;
   h1 {
     // width: 503px;
     height: 127px;
-    margin: 0 auto;
+    margin: .75em auto 0;
     padding: 0;
     text-indent: 100%;
     white-space: nowrap;
@@ -217,34 +218,28 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .fluid { 
+  // adjustments for fluid app
   .content {
     height: 760px; //fluid.app
   }
   .items {
     padding-top: 2px;
   }
-  // .slats {
-  //   li {
-  //     padding: 0.3em 0 0.4em;
-  //   }
-  // }
-  // .activated, .trinkets {
-  //   li {
-  //     width: 33%;
-  //   }
-  // }
 }
 
 .main {
   width: 454px + 1018;
   float: left;
-  padding: 6px 15px 0 0;
   // border-right: 1px dashed $divider;
-  .item li {
-    width: 10%;
-    &:first-child {
-      width: 20%;
-      padding-left: 10%;
+
+  .item {
+    padding: 6px 15px 0 0;
+    li {
+      width: 10%;
+      &:first-child {
+        width: 20%;
+        padding-left: 10%;
+      }
     }
   }
   &:after {
