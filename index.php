@@ -7,18 +7,30 @@
         $gallery .= "<li><img src='$file' title='$file'><h3>$name</h3></li>\n";
     }
 
-function getsheet($odnumber) {
+
+
+function getsheetlist($sheet) {
+    // get a sheet from the google spreadsheet. return as list items
+
     // https://gist.github.com/pamelafox/770584
     // http://damolab.blogspot.ca/2011/03/od6-and-finding-other-worksheet-ids.html
     // https://spreadsheets.google.com/feeds/worksheets/0AlMQBNMXy71CdHQ2VDBmbG5yLVhHLUVpdk5yV0hOWWc/private/full   
-    // oda - items
-    // od6 - activated
-    // odb - trinkets
-    // od5 - cards
-    // od4 - pills
+    // sheets from google spreadsheets and corresponding od number
+
+    // tranlation array: each sheet has a od code - this array just makes it easier to use
+    // update it when adding new sheets
+    
+    $spread = array(
+        "items" => "oda",
+        "trinkets" => "odb",
+        "activated" => "od6",
+        "pills" => "od5",
+        "tarots" => "od7"
+        );
+
 
     $key = "0AlMQBNMXy71CdHQ2VDBmbG5yLVhHLUVpdk5yV0hOWWc";
-    $url = "http://spreadsheets.google.com/feeds/list/{$key}/{$odnumber}/public/values?alt=json";
+    $url = "http://spreadsheets.google.com/feeds/list/{$key}/{$spread[$sheet]}/public/values?alt=json";
     $file = file_get_contents($url);
     $json = json_decode($file);
 
@@ -38,6 +50,8 @@ function getsheet($odnumber) {
 
       $pathtoimg = "img/all/{$shortname}.png";
       if (file_exists($pathtoimg)) {
+        // list($width, $height) = getimagesize($pathtoimg);
+        // $items .= "<img src='{$pathtoimg}' width='{$width}' height='{$height}'>";
         $items .= "<img src='{$pathtoimg}'>";
       }
 
@@ -94,7 +108,7 @@ function getsheet($odnumber) {
                     <h1>The Binding of <strong>Isaac's Cheatsheet</strong></h1>
                     
                     <div class='instructions'>
-                        <h4>instructions:</h4>
+                        <h2>instructions:</h2>
                         <ol>
                             <li>Launch The Binding of Isaac.</li>
                             <li>Put the game window over this dotted box. <i>(as high up as it can go)</i></li>
@@ -103,20 +117,20 @@ function getsheet($odnumber) {
                     </div>
                     
                     <section>
-                        <h5>What is this? A cheatsheet for ants?</h5>
+                        <h3>What is this? A cheatsheet for ants?</h3>
                         <p>This is a cheatsheet that you keep <strong>behind</strong> your Binding of Isaac game window (set to large) so you can get a quick item reference while playing. <a href="http://imgur.com/FiiocN9">See here.</a> Everything is tiny because it was made for my monitor resolution of 1920x1080 and I wanted everthing to fit on screen at the same time.</P>
                     </section>
 
                     <section class='app'>
                         <a href="http://www.mediafire.com/?lexqbafe4245qde">
                             <img src='img/osx-icon.png'>
-                            <h5>Download<br>the Mac OS X app.</h5>
+                            <h3>Download<br>the Mac OS X app.</h3>
                         </a>
                         <p>Run it, hide the statusbar (cmd-/) and maximize the screen. This isn't a real program. It's just <a href="http://fluidapp.com/">a minimal browser</a> that displays this webpage without needing to scroll.</p>
                     </section>
 
                     <section class='contact'>
-                        <h5>Me fail English? That's unpossible.</h5>
+                        <h3>Me fail English? That's unpossible.</h3>
                         <p>Is something spelled incorrectly? Is an item description wrong? Got a suggestion? <spam style='color: #f00'>Is something <strong>too</strong> red?</spam> <a class="lightbox-31286340382249 btn" style="cursor:pointer;">Contact Us</a> and we'll absolutely not respond to you. Corrections are appreciated and likely implemented though!</p>
                         <!-- <p>We're also on <a href='//bindingofisaac.reddit.com'>r/bindingofisaac</a> all the time so we can ignore you there as well.</p> -->
                     </section>
@@ -128,7 +142,7 @@ function getsheet($odnumber) {
                 <h2>Passive Items</h2>
                 <ul class='slats'>
                     <!-- <li><h2>Items</h2></li> -->
-                    <?php echo getsheet('oda'); ?>
+                    <?php echo getsheetlist('items'); ?>
                 </ul>
                 </div>
             </div>
@@ -137,26 +151,26 @@ function getsheet($odnumber) {
             <div class='trinkets'>
                 <h2>Trinkets</h2>
                 <ul class='slats'>
-                    <?php echo getsheet('odb'); ?>
+                    <?php echo getsheetlist('trinkets'); ?>
                 </ul>
             </div>
 
             <div class='activated'>
                 <h2>Activated</h2>
                 <ul class='slats'>
-                    <?php echo getsheet('od6'); ?>
+                    <?php echo getsheetlist('activated'); ?>
                 </ul>
             </div>
             <div class='pills'>
                 <h2>Pills</h2>
                 <ul class='slats'>
-                    <?php echo getsheet('od5'); ?>
+                    <?php echo getsheetlist('pills'); ?>
                 </ul>
             </div>
             <div class='tarot'>
                 <h2>Tarots</h2>
                 <ul class='slats'>
-                    <?php echo getsheet('od7'); ?>
+                    <?php echo getsheetlist('tarots'); ?>
                 </ul>
             </div>
         </div><!--#wrapper-->

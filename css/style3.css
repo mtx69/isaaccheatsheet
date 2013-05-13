@@ -75,7 +75,7 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: normal;
     color: #fff;
     padding-bottom: 1em; }
-    .content .instructions h4 {
+    .content .instructions h2 {
       margin-bottom: 0;
       font-size: .6em; }
     .content .instructions ol {
@@ -89,7 +89,7 @@ h1, h2, h3, h4, h5, h6 {
       font-size: .6em;
       display: block;
       color: #ffffbb; }
-  .content h5 {
+  .content h3 {
     font-size: 1.25em;
     margin: .1em 0 0;
     color: #fff; }
