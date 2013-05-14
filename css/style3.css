@@ -35,7 +35,9 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Delius Unicase', verdana, sans-serif; }
 
 a {
-  color: #ae9683; }
+  color: #fb0; }
+  a:hover {
+    color: #ff0; }
 
 #wrapper {
   position: relative;
@@ -307,3 +309,8 @@ a {
     width: 10%; }
     .gallery li h3 {
       font: 8px/1 verdana; }
+
+footer {
+  margin: 0 4em; }
+  footer a {
+    white-space: nowrap; }

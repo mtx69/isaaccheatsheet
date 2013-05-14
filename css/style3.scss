@@ -40,7 +40,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 a {
-  color: $ltbrown;
+  color: #fb0;
+  &:hover {
+    color: #ff0;
+  }
 }
 
 #wrapper {
@@ -380,6 +383,13 @@ a {
     h3 {
       font: 8px/1 verdana;
     }
+  }
+}
+
+footer {
+  margin: 0 4em;
+  a {
+    white-space: nowrap;
   }
 }
 
