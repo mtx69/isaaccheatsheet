@@ -8,4 +8,9 @@ All the items, trinkets, tarots, pics and descriptions from The Binding of Isaac
 
 ### Behind the scenes
 
-Items are stored on Google Spreadsheets for easy editing. Each category is stored in it's own sheet and PHP is used to pull in the data and present it as HTML.
+This project is a culmination of ideas: 
+
+- using Google Spreadsheets sheets to hold data that could be brought in via PHP
+- rename images by using html5 drag and drop and an ajax function
+- learning how to use git, github and github pages
+- using Google Analytics to see how semantic html really affects SEO

@@ -1,11 +1,16 @@
 <?php
-    $files = glob("img/all/*.png");
-    $gallery = '';
-    foreach ($files as $file) {
-        $name = str_replace('_', ' ', basename($file));
-        $name = str_replace('.png', '', $name);
-        $gallery .= "<li><img src='$file' title='$file'><h3>$name</h3></li>\n";
-    }
+    //
+    // see the full source at https://github.com/mtx69/isaaccheatsheet
+    // or read https://github.com/mtx69/isaaccheatsheet/blob/gh-pages/readme.md
+
+    // get all pngs in a dir, return list of imgs    
+    // $files = glob("img/all/*.png");
+    // $gallery = '';
+    // foreach ($files as $file) {
+    //     $name = str_replace('_', ' ', basename($file));
+    //     $name = str_replace('.png', '', $name);
+    //     $gallery .= "<li><img src='$file' title='$file'><h3>$name</h3></li>\n";
+    // }
 
 
 
