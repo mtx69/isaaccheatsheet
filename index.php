@@ -81,8 +81,8 @@ function getsheetlist($sheet) {
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Isaac's Cheatsheet</title>
-        <meta name="description" content="The Binding of Isaac Cheat sheet. Isaac's Cheat sheet lists all items with descriptions laid out to sit behind the game window for easy reference. Download the Mac OS X application for even easier access.">
+        <title>Isaac's Cheatsheet for the Binding of Isaac/Wrath of the Lamb</title>
+        <meta name="description" content="The Binding of Isaac Cheat sheet. Isaac's Cheat sheet lists all items, trinkets, tarots, etc with pics and descriptions laid out to sit behind the game window for easy reference. Download the Mac OS X application for even easier access.">
         <meta name="viewport" content="width=1920">
 
         <link href="favicon.png" rel="shortcut icon"/>
@@ -105,10 +105,10 @@ function getsheetlist($sheet) {
 
                 <div class='content'>
 
-                    <h1>The Binding of <strong>Isaac's Cheatsheet</strong></h1>
+                    <h1><strong>Isaac's Cheat Sheet</strong> for The Binding of Isaac and Wrath of the Lamb</h1>
                     
                     <div class='instructions'>
-                        <h2>instructions:</h2>
+                        <h2>Instructions:</h2>
                         <ol>
                             <li>Launch The Binding of Isaac.</li>
                             <li>Put the game window over this dotted box. <i>(as high up as it can go)</i></li>
@@ -117,16 +117,16 @@ function getsheetlist($sheet) {
                     </div>
                     
                     <section>
-                        <h3>What is this? A cheatsheet for ants?</h3>
-                        <p>This is a cheatsheet that you keep <strong>behind</strong> your Binding of Isaac game window (set to large) so you can get a quick item reference while playing. <a href="http://imgur.com/FiiocN9">See here.</a> Everything is tiny because it was made for my monitor resolution of 1920x1080 and I wanted everthing to fit on screen at the same time.</P>
+                        <h3>What is this? A cheat sheet for ants?</h3>
+                        <p>All the items, trinkets, tarots, pics and descriptions for The Binding of Isaac and The Wrath of the Lamb expansion pack on one convenient page. Start your Isaac game and have this site behind the game's window for easy referencing. Recommended screen resolution: 1920x1080 or higher.</p>
                     </section>
 
                     <section class='app'>
-                        <a href="http://www.mediafire.com/?lexqbafe4245qde">
+                        <a href="//www.mediafire.com/?lexqbafe4245qde">
                             <img src='img/osx-icon.png'>
                             <h3>Download<br>the Mac OS X app.</h3>
                         </a>
-                        <p>Run it, hide the statusbar (cmd-/) and maximize the screen. This isn't a real program. It's just <a href="http://fluidapp.com/">a minimal browser</a> that displays this webpage without needing to scroll.</p>
+                        <p>Run it, hide the statusbar (cmd-/) and maximize the screen. This isn't a real program. It's just <a href="//fluidapp.com/">a minimal browser</a> that displays this webpage without needing to scroll.</p>
                     </section>
 
                     <section class='contact'>
@@ -135,7 +135,7 @@ function getsheetlist($sheet) {
                         <!-- <p>We're also on <a href='//bindingofisaac.reddit.com'>r/bindingofisaac</a> all the time so we can ignore you there as well.</p> -->
                     </section>
 
-                    <p>Thank you reddit contributors (and whoever ripped those sprites and put them on mediafire)! Give all your monies to Ed McMillen and Florian Himsl.</p>
+                    <p>Thank you <a href='//bindingofisaac.reddit.com'>reddit</a> contributors (and whoever ripped those sprites and put them on mediafire)! Give all your monies to Ed McMillen and Florian Himsl.</p>
 
                 </div><!--.content-->
                 <div class='item'>

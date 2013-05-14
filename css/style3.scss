@@ -35,6 +35,10 @@ body {
   }
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Delius Unicase', verdana, sans-serif;
+}
+
 a {
   color: $ltbrown;
 }
@@ -51,9 +55,7 @@ a {
   top: 13px;
   left: 385px;
 }
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Delius Unicase', verdana, sans-serif;
-}
+
 
 
 

@@ -31,6 +31,9 @@ body {
     background: rgba(83, 67, 54, 0.85);
     z-index: 10; }
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Delius Unicase', verdana, sans-serif; }
+
 a {
   color: #ae9683; }
 
@@ -44,9 +47,6 @@ a {
   position: absolute;
   top: 13px;
   left: 385px; }
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Delius Unicase', verdana, sans-serif; }
 
 .content {
   position: relative;
