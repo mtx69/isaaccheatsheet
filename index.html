@@ -30,15 +30,23 @@
 
                 <div class='content'>
 
-                    <h1><strong>Isaac's Cheat Sheet</strong> for The Binding of Isaac and Wrath of the Lamb</h1>
+                    <nav role='main'>
+                        <li><a href='' id="instr">How to use this</a></li>
+                        <li><a href=''>About</a></li>
+                        <li><a href="/"><h1><strong>Isaac's Cheat Sheet</strong> for The Binding of Isaac and Wrath of the Lamb</h1></a></li>
+                        <li><a href=''>Mac App</a></li>
+                        <li><a href=''>Tools</a></li>
+                        <li><a href=''>Contact</a></li>
+                    </nav>
                     
-                    <div class='instructions'>
+                    <div class='instructions' id="modal" draggable='true'>
                         <h2>Instructions:</h2>
                         <ol>
                             <li>Launch The Binding of Isaac.</li>
-                            <li>Put the game window over this dotted box. <i>(as high up as it can go)</i></li>
+                            <li>Put the game window over the dotted box. <i>(and as high up as it can go)</i></li>
                             <li>Kick Mom's ass!</li>
                         </ol>
+                        <a class='close' >X</a>
                     </div>
                     
                     <section>
@@ -372,6 +380,8 @@
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.0.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
+
+
         <script>
             var _gaq=[['_setAccount','UA-19653275-5'],['_trackPageview']];
             (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
@@ -390,6 +400,17 @@ height:380,
 width:350
 });
 </script>
+<script>
 
+
+$('.close').click(function(e){
+    $(this).parent().fadeOut(500);
+    e.preventDefault();
+});
+$('#instr').click(function(e){
+    $('.instructions').fadeIn(500);
+    e.preventDefault();
+});
+</script>
     </body>
 </html>
