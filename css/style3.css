@@ -31,7 +31,7 @@ body {
     background: rgba(83, 67, 54, 0.85);
     z-index: 10; }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, nav {
   font-family: 'Delius Unicase', verdana, sans-serif; }
 
 a {
@@ -64,9 +64,8 @@ a {
   font-size: 11px;
   background: url(../img/blood.png) no-repeat 50% 0; }
   .content h1 {
+    width: 503px;
     height: 127px;
-    margin: .75em auto 0;
-    padding: 0;
     text-indent: 100%;
     white-space: nowrap;
     overflow: hidden;
@@ -311,6 +310,55 @@ a {
       font: 8px/1 verdana; }
 
 footer {
-  margin: 0 4em; }
+  margin: 0 2em;
+  position: absolute;
+  bottom: 1em; }
   footer a {
     white-space: nowrap; }
+
+.content h1 {
+  margin: 0; }
+.content nav {
+  margin: 1em 0 2em;
+  font-size: 1.2em; }
+  .content nav li {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 .5em; }
+  .content nav a {
+    color: #B09159;
+    text-shadow: 0 3px 0 #342616, 0 2px 0 #342616, 0 1px 0 #342616;
+    text-decoration: none; }
+    .content nav a:hover {
+      color: #ff0; }
+
+#modal {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.85);
+  padding: .5em 2em;
+  border-radius: 1em 0 1em 1em;
+  top: 160px;
+  left: 260px;
+  width: 450px;
+  box-shadow: 0 0 40px #000;
+  border: 2px solid #fff; }
+  #modal li {
+    margin: .5em 0; }
+  #modal .close {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: -0.65em;
+    right: -0.65em;
+    text-align: center;
+    background: #000;
+    border: 2px solid white;
+    border-radius: 1em;
+    width: 2em;
+    height: 2em;
+    font: bold 0.5em/1.8em sans-serif;
+    cursor: default;
+    color: #fff; }
+    #modal .close:hover {
+      background: #fff;
+      color: #000; }
