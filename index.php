@@ -114,9 +114,9 @@ function getsheetlist($sheet) {
                         <li><a href='' id="instr">How to use this</a></li>
                         <li><a href=''>About</a></li>
                         <li><a href="/"><h1><strong>Isaac's Cheat Sheet</strong> for The Binding of Isaac and Wrath of the Lamb</h1></a></li>
-                        <li><a href=''>Mac App</a></li>
+                        <li><a href='//www.mediafire.com/?lexqbafe4245qde'>Mac App</a></li>
                         <li><a href=''>Tools</a></li>
-                        <li><a href=''>Contact</a></li>
+                        <li><a class="lightbox-31286340382249" style="cursor:pointer;">Contact</a></li>
                     </nav>
                     
                     <div class='instructions' id="modal" draggable='true'>
