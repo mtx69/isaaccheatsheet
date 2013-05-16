@@ -424,7 +424,7 @@ footer {
   background: rgba(0,0,0,.85);
   padding: .5em 2em;
   border-radius: 1em 0 1em 1em;
-  // display: none;
+  display: none;
 
   top: 160px;
   left: 260px;
@@ -456,7 +456,9 @@ footer {
     }
   }
 }
-
+#nag {
+  font: normal 10px/1 verdana;
+}
 
 // @media all and (max-width: 1890px) {
 //   #wrapper, .activated, .items, .tarot, .trinkets, .gallery {

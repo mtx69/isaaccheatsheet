@@ -46,6 +46,7 @@
                             <li>Put the game window over the dotted box. <i>(and as high up as it can go)</i></li>
                             <li>Kick Mom's ass!</li>
                         </ol>
+                        <label id='nag'><input type='checkbox'> Don't nag me, Bro! (Hide me on next visit.)</label>
                         <a class='close' >X</a>
                     </div>
                     
@@ -74,10 +75,10 @@
 
                 </div><!--.content-->
                 <div class='item'>
-                <h2>Passive Items</h2>
-                <ul class='slats'>
-                    <!-- <li><h2>Items</h2></li> -->
-                    <li id='3'><div class='icon'><img src='img/all/3.png'></div><h3><3</h3><p>HP +1, 100% heal</p></li>
+                    <h2>Passive Items</h2>
+                    <ul class='slats'>
+                        <!-- <li><h2>Items</h2></li> -->
+                        <li id='3'><div class='icon'><img src='img/all/3.png'></div><h3><3</h3><p>HP +1, 100% heal</p></li>
 <li id='1up'><div class='icon'><img src='img/all/1up.png'></div><h3>1UP</h3><p>Life +1</p></li>
 <li id='3-dollar-bill'><div class='icon'><img src='img/all/3-dollar-bill.png'></div><h3>3 Dollar Bill</h3><p>Effect changes/rm</p></li>
 <li id='9-volt'><div class='icon'><img src='img/all/9-volt.png'></div><h3>9 Volt</h3><p>Recharge current item. Charge +2</p></li>
@@ -221,7 +222,7 @@
 <li id='wire-coat-hanger'><div class='icon'><img src='img/all/wire-coat-hanger.png'></div><h3>Wire Coat Hanger</h3><p>Tears +2</p></li>
 <li id='wooden-spoon'><div class='icon'><img src='img/all/wooden-spoon.png'></div><h3>Wooden Spoon</h3><p>Spd +2</p></li>
 <li id='x-ray-vision'><div class='icon'><img src='img/all/x-ray-vision.png'></div><h3>X-ray Vision</h3><p>Secret rms</p></li>
-                </ul>
+                    </ul>
                 </div>
             </div>
 
@@ -326,14 +327,14 @@
                 <h2>Pills</h2>
                 <ul class='slats'>
                     <li id='bad-gas'><div class='icon'></div><h3>Bad Gas</h3><p>Poison radius</p></li>
-<li id='bad-trip'><div class='icon'></div><h3>Bad Trip</h3><p>No effect</p></li>
+<li id='bad-trip'><div class='icon'></div><h3>Bad Trip</h3><p>On 1 &hearts; 100% HP</p></li>
 <li id='balls-of-steel'><div class='icon'></div><h3>Balls of Steel</h3><p>2 Soul Hearts</p></li>
 <li id='bombs-are-keys'><div class='icon'></div><h3>Bombs are Keys</h3><p>Swap bombs for keys</p></li>
 <li id='explosive-diarrhea-oh-no'><div class='icon'></div><h3>Explosive Diarrhea! (Oh, No!)</h3><p>Dmg radius</p></li>
 <li id='friends-till-the-end'><div class='icon'></div><h3>Friends Till The End!</h3><p>3 homing flies</p></li>
 <li id='full-health'><div class='icon'></div><h3>Full Health</h3><p>100% HP</p></li>
-<li id='health-updown'><div class='icon'></div><h3>Health Up/Down</h3><p>&hearts; +/-</p></li>
-<li id='i-found-pills'><div class='icon'></div><h3>I Found Pills</h3><p>No effect</p></li>
+<li id='health-updown'><div class='icon'></div><h3>Health Up/Down</h3><p>&hearts;+/-</p></li>
+<li id='i-found-pills'><div class='icon'></div><h3>I Found Pills</h3><p>On 1&hearts;, 100% HP</p></li>
 <li id='pretty-fly'><div class='icon'></div><h3>Pretty Fly</h3><p>Fly orbits</p></li>
 <li id='puberty'><div class='icon'></div><h3>Puberty</h3><p>No effect</p></li>
 <li id='range-updown'><div class='icon'></div><h3>Range Up/Down</h3><p>Range +/-</p></li>
@@ -402,15 +403,41 @@ width:350
 </script>
 <script>
 
+if (localStorage.getItem("nonag")=='true') {
+    $('#modal').hide();
+    $("#nag input").attr('checked', true);
+} else {
+    $('#modal').show();
+    $("#nag input").attr('checked', false);
+};
 
+// instructions modal:
+// hide the window when close is clicked
 $('.close').click(function(e){
     $(this).parent().fadeOut(500);
     e.preventDefault();
 });
+// show the window when instr is clicked
 $('#instr').click(function(e){
     $('.instructions').fadeIn(500);
     e.preventDefault();
 });
+
+
+// remember to open/close model w/ localstorage
+$("#nag input").change(function(){
+    if($(this).is(":checked")) {
+        console.log('checked!');
+        localStorage.setItem("nonag", 'true');
+    } else {
+        console.log('unchecked!');
+        localStorage.setItem("nonag", 'false');
+    }
+});
+// if (Modernizr.localstorage) {
+//   console.log('localstorage!');
+// }
+
 </script>
     </body>
 </html>

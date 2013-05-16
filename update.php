@@ -126,6 +126,7 @@ function getsheetlist($sheet) {
                             <li>Put the game window over the dotted box. <i>(and as high up as it can go)</i></li>
                             <li>Kick Mom's ass!</li>
                         </ol>
+                        <label id='nag'><input type='checkbox'> Don't nag me, Bro! (Hide me on next visit.)</label>
                         <a class='close' >X</a>
                     </div>
                     
@@ -154,11 +155,11 @@ function getsheetlist($sheet) {
 
                 </div><!--.content-->
                 <div class='item'>
-                <h2>Passive Items</h2>
-                <ul class='slats'>
-                    <!-- <li><h2>Items</h2></li> -->
-                    <?php echo getsheetlist('items'); ?>
-                </ul>
+                    <h2>Passive Items</h2>
+                    <ul class='slats'>
+                        <!-- <li><h2>Items</h2></li> -->
+                        <?php echo getsheetlist('items'); ?>
+                    </ul>
                 </div>
             </div>
 
@@ -216,15 +217,41 @@ width:350
 </script>
 <script>
 
+if (localStorage.getItem("nonag")=='true') {
+    $('#modal').hide();
+    $("#nag input").attr('checked', true);
+} else {
+    $('#modal').show();
+    $("#nag input").attr('checked', false);
+};
 
+// instructions modal:
+// hide the window when close is clicked
 $('.close').click(function(e){
     $(this).parent().fadeOut(500);
     e.preventDefault();
 });
+// show the window when instr is clicked
 $('#instr').click(function(e){
     $('.instructions').fadeIn(500);
     e.preventDefault();
 });
+
+
+// remember to open/close model w/ localstorage
+$("#nag input").change(function(){
+    if($(this).is(":checked")) {
+        console.log('checked!');
+        localStorage.setItem("nonag", 'true');
+    } else {
+        console.log('unchecked!');
+        localStorage.setItem("nonag", 'false');
+    }
+});
+// if (Modernizr.localstorage) {
+//   console.log('localstorage!');
+// }
+
 </script>
     </body>
 </html>

@@ -337,6 +337,7 @@ footer {
   background: rgba(0, 0, 0, 0.85);
   padding: .5em 2em;
   border-radius: 1em 0 1em 1em;
+  display: none;
   top: 160px;
   left: 260px;
   width: 450px;
@@ -362,3 +363,6 @@ footer {
     #modal .close:hover {
       background: #fff;
       color: #000; }
+
+#nag {
+  font: normal 10px/1 verdana; }
