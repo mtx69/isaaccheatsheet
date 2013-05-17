@@ -62,7 +62,8 @@ a {
   text-align: center;
   z-index: 1000;
   font-size: 11px;
-  background: url(../img/blood.png) no-repeat 50% 0; }
+  background: url(../img/blood.png) no-repeat 50% 0;
+  overflow-y: auto; }
   .content h1 {
     width: 503px;
     height: 127px;
@@ -94,15 +95,8 @@ a {
     font-size: 1.25em;
     margin: .1em 0 0;
     color: #fff; }
-  .content section {
-    display: inline-block;
-    width: 250px;
-    vertical-align: top;
-    margin: 0 2em 2em;
-    padding: 1.75em 2em 1em;
-    text-align: left;
-    border-radius: 2em;
-    background: rgba(0, 0, 0, 0.4); }
+  .content section[role='main'] {
+    padding: 0 4em; }
   .content .app {
     text-align: center; }
   .content .contact .btn {
@@ -310,9 +304,8 @@ a {
       font: 8px/1 verdana; }
 
 footer {
-  margin: 0 2em;
-  position: absolute;
-  bottom: 1em; }
+  margin: 2em 2em 1em;
+  border-top: 1px solid rgba(0, 0, 0, 0.3); }
   footer a {
     white-space: nowrap; }
 
@@ -331,6 +324,18 @@ footer {
     text-decoration: none; }
     .content nav a:hover {
       color: #ff0; }
+.content section {
+  font-size: 1.3em;
+  text-align: left; }
+  .content section h2, .content section h3, .content section h4, .content section h5, .content section h6 {
+    font-weight: normal;
+    color: #fff; }
+  .content section article {
+    border-top: 1px solid rgba(0, 0, 0, 0.3);
+    padding-top: .5em; }
+  .content section .date {
+    margin-top: 0;
+    font-size: .7em; }
 
 #modal {
   position: absolute;
