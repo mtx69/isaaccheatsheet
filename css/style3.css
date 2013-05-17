@@ -353,6 +353,7 @@ footer {
 
 #modal {
   position: absolute;
+  z-index: 30000;
   background: rgba(0, 0, 0, 0.85);
   padding: .5em 2em;
   border-radius: 1em 0 1em 1em;

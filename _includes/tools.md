@@ -18,4 +18,6 @@ Everything your need to know about Isaac - items, item combos, characters, etc.
 
 #### [Bisnap's Let's Play The Binding of Isaac](http://www.youtube.com/playlist?list=PLA958826F60F5B8B7)
 
+#### [Utorak007's YouTube Channel](http://www.youtube.com/user/Utorak007/)
+
 #### [r/bindingofisaac subreddit](http://bindingofisaac.reddit.com)
