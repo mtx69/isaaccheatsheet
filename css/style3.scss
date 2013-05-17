@@ -73,7 +73,7 @@ a {
   border-radius: 0  0 2em 2em;
   text-align: center;
   z-index: 1000;
-  font-size: 11px;
+  // font-size: 11px;
   background: url(../img/blood.png) no-repeat 50% 0;
   overflow-y: auto;
   h1 {
@@ -118,6 +118,7 @@ a {
   }
   section[role='main'] {
     padding: 0 4em;
+    overflow: hidden;
   }
   // article {
   //   display: inline-block;
@@ -391,9 +392,10 @@ a {
 }
 
 footer {
-  margin: 4em 2em 2em;
+  margin: 2em 2em 2em;
   padding-top: 2em;
   border-top: 1px solid rgba(0,0,0,.3);
+  clear: left;
   // position: absolute;
   // bottom: 1em;
   a {
@@ -427,7 +429,7 @@ footer {
     }
   }
   section {
-    font-size: 1.2em;
+    font-size: 1.1em;
     line-height: 1.5;
     text-align: left;
     h2,h3,h4,h5,h6 {
@@ -435,17 +437,18 @@ footer {
       // font-family: verdana;
       color: #fff;
       margin-bottom: 0;
-      margin-top: 2em;
+      margin-top: 1.5em;
     }
     article {
       border-top: 1px solid rgba(0,0,0,.3);
       padding-top: 0em;
-      margin-top: 2em;
+      margin-top: 1.5em;
       position: relative;
     }
     .date {
       margin-top: 0;
-      font-size: .7em;
+      // font-size: .7em;
+      color: $ltbrown;
     }
     .big {
       max-width: 750px;
@@ -455,7 +458,31 @@ footer {
     }
   }
 }
+#posts {
+  width: 48%;
+  // font-size: .8em;
+  float: left;
+  img {
+    max-width: 80%;
+  }
+}
 
+#social {
+  float: right;
+  width: 48%;
+  margin: 0 0 0 2%;
+  padding-left: 2em;
+  border-left: 1px solid rgba(0,0,0,.4);
+  overflow: hidden;
+  // outline: 1px solid pink;
+  img {
+    max-width: 100%;
+    margin: 1em auto;
+    border: 6px solid darken($brown, 5%);
+    box-shadow: 0 20px 20px -10px rgba(0,0,0,.6);
+
+  }
+}
 #modal {
   position: absolute;
   z-index: 30000;
@@ -474,7 +501,7 @@ footer {
   }
   .close {
     margin: 0;
-    padding: 0;
+    padding: 0 .5em;
     position: absolute;
     top: -.65em;
     right: -.65em;
@@ -483,9 +510,7 @@ footer {
     background: #000;
     border: 2px solid white;
     border-radius: 1em;
-    width: 2em;
-    height: 2em;
-    font: bold .5em/1.8em sans-serif;
+    font: bold .5em/1.5em sans-serif;
     cursor: default;
     color: #fff;
     &:hover {

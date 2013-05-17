@@ -5,6 +5,4 @@ date:   2013-05-17 09:00:00
 categories: update
 ---
 
-For those that are wondering, the navigation is working now and we've got a CMS running.
-
-Long weekend means either seeing Star Trek into Darkness or working on this site.
+The navigation bar works now - sorry to those that we're clicking on it. This site is constantly in an experimental state to teach myself how to use different technologies.

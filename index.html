@@ -5,9 +5,9 @@ title: Welcome
 
 <div id='posts'>
 
-<h2>Basement News</h2>
+<!-- <h2>Basement News</h2> -->
 
-{% for post in site.posts %}
+{% for post in paginator.posts %}
 
 <article>
 
@@ -22,4 +22,18 @@ title: Welcome
 
 {% endfor %}
 
+</div>
+
+<div id='social'>
+    
+    <h3>On Reddit</h3>
+
+    <p>
+        <a href="http://imgur.com/qnzARgd" target='_blank'>
+            Biggest laser I've ever gotten no.2 (This time with crazy tears):<br>
+            <img src="http://i.imgur.com/qnzARgd.png" title="Hosted by imgur.com">
+        </a>
+    </p>
+
+    <h4><a href='http://www.reddit.com/r/bindingofisaac/comments/1efz5h/post_an_isaac_fact_you_think_not_many_people_are/' target='_blank'>Post an Isaac fact you think not many people are aware of</a></h4>
 </div>

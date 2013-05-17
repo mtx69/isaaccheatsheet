@@ -1,3 +1,9 @@
+### Tools for Windows
+
+#### [JoyToKey](http://www-en.jtksoft.net/)
+
+Map gamepad buttons to keyboard input.
+
 ### Tools for Macs
 
 #### [Xbox 360 Contoller Driver](http://tattiebogle.net/index.php/ProjectRoot/Xbox360Controller/OsxDriver) 
