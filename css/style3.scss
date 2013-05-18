@@ -440,9 +440,9 @@ footer {
       margin-top: 1.5em;
     }
     article {
-      border-top: 1px solid rgba(0,0,0,.3);
-      padding-top: 0em;
-      margin-top: 1.5em;
+      border-bottom: 1px solid rgba(0,0,0,.3);
+      padding-bottom: 1em;
+      margin-bottom: 1.5em;
       position: relative;
     }
     .date {
@@ -462,11 +462,15 @@ footer {
   width: 48%;
   // font-size: .8em;
   float: left;
+  h3 {
+    margin: 0;
+  }
   img {
     max-width: 80%;
   }
 }
-
+#post-pagination {
+}
 #social {
   float: right;
   width: 48%;
@@ -522,56 +526,110 @@ footer {
 #nag {
   font: normal 10px/1 verdana;
 }
+@media all and (max-width: 1890px) {
+  #wrapper {
+    width: 100%;
+  }
+  .main {
+    width: 75%;
+    .item {
+      h2 {
+        display: table;
+        // width: 100%;
+        position: relative;
+        white-space: nowrap;
+      }
+      li {
+        width: 140px;
+        &:first-child {
+        padding-left: 0;
+        width: 140px;
+        }
+      }
+    }
+  }
+  .trinkets, .activated, .pills {
+    h2 {
+      display: block;
+      width: 100%;
+      position: relative;
+      min-width: 140px;
+    }
+    width: 25%;
+    li {
+      width: 140px;
+      &:first-child {
+        padding-left: 0;
+        width: 140px;
+      }
+    }
+  }
+  .pills {
+    width: 100% !important;
+  }
+  .item, .trinkets, .activated, .pills, .tarot {
+    li {
+      padding: 4px;
+      width: 140px;
+    }
+  }
+}
+@media all and (max-width: 1368px) {
+  .main, .trinkets, .activated, .pills, .tarot {
+    width: 100%;
+    float: none;
+  }
+  .content {
+    margin: 0 auto;
+    float: none;
+  }
+}
 
 // @media all and (max-width: 1890px) {
-//   #wrapper, .activated, .items, .tarot, .trinkets, .gallery {
+//   #wrapper {
 //     width: 100%;
-//     float: none;
-//     display: block;
-//     position: relative;
-//     top: 0;
-//     left: 0;
-//     border-width: 0;
+//   }
+//   .main {
+//     width: 75%;
+//     .item {
+//       h2 {
+//         display: block;
+//         width: 100%;
+//         position: relative;
+//       }
+//       li:first-child {
+//         padding-left: 0;
+//         width: inherit;
+//       }
+//     }
+//   }
+//   .trinkets, .activated, .pills {
 //     h2 {
-//       border-top: 1px dashed #800;
-//       padding: 1em 0 .5em;
-//       margin-top: 1em;
-//       font-size: 18px;
 //       display: block;
+//       width: 100%;
+//       position: relative;
 //     }
-//     ul {
-//       text-align: left;
-//     }
+//     width: 25%;
 //     li {
-//       width: 25%;
-//       font-size: 14px;
-//       margin-bottom: 1em;
-//       line-height: 1.4;
-//       padding: 0 1em;
-//       // outline: 1px solid red;
-//     }
-//   }
-//   .items {
-//     &:before {
-//       width: inherit;
-//       height: inherit;
-//     }
-//   }
-//   .gallery {
-//     display: none;
-//   }
-// }
-// @media all and (max-width: 767px) {
-//   #wrapper, .activated, .items, .tarot, .trinkets, .gallery { 
-//     li {
-//       width: 33%;
+//       width: 33.33%;
+//       &:first-child {
+//         padding-left: 0;
+//         width: inherit;
+//       }
 //     }
 //   }
 // }
-// @media all and (max-width: 479px) and (min-width: 320px) {
-//   #wrapper, .activated, .items, .tarot, .trinkets, .gallery { 
-//     li {
-//       width: 50%;
+// @media all and (max-width: 1701px) {
+//   .main {
+//     .item li {
+//       width: 14%;
+//     }
+//   }
+// }
+// @media all and (max-width: 1693px) {
+//   .main {
+//     .item li {
+//       width: 20%;
 //     }
 //   }
 // }

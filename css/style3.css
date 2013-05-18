@@ -339,9 +339,9 @@ footer {
     margin-bottom: 0;
     margin-top: 1.5em; }
   .content section article {
-    border-top: 1px solid rgba(0, 0, 0, 0.3);
-    padding-top: 0em;
-    margin-top: 1.5em;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    padding-bottom: 1em;
+    margin-bottom: 1.5em;
     position: relative; }
   .content section .date {
     margin-top: 0;
@@ -355,6 +355,8 @@ footer {
 #posts {
   width: 48%;
   float: left; }
+  #posts h3 {
+    margin: 0; }
   #posts img {
     max-width: 80%; }
 
@@ -404,3 +406,47 @@ footer {
 
 #nag {
   font: normal 10px/1 verdana; }
+
+@media all and (max-width: 1890px) {
+  #wrapper {
+    width: 100%; }
+
+  .main {
+    width: 75%; }
+    .main .item h2 {
+      display: table;
+      position: relative;
+      white-space: nowrap; }
+    .main .item li {
+      width: 140px; }
+      .main .item li:first-child {
+        padding-left: 0;
+        width: 140px; }
+
+  .trinkets, .activated, .pills {
+    width: 25%; }
+    .trinkets h2, .activated h2, .pills h2 {
+      display: block;
+      width: 100%;
+      position: relative;
+      min-width: 140px; }
+    .trinkets li, .activated li, .pills li {
+      width: 140px; }
+      .trinkets li:first-child, .activated li:first-child, .pills li:first-child {
+        padding-left: 0;
+        width: 140px; }
+
+  .pills {
+    width: 100% !important; }
+
+  .item li, .trinkets li, .activated li, .pills li, .tarot li {
+    padding: 4px;
+    width: 140px; } }
+@media all and (max-width: 1368px) {
+  .main, .trinkets, .activated, .pills, .tarot {
+    width: 100%;
+    float: none; }
+
+  .content {
+    margin: 0 auto;
+    float: none; } }
