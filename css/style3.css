@@ -45,11 +45,6 @@ a {
   margin: 0 auto;
   z-index: 100; }
 
-.screenshot {
-  position: absolute;
-  top: 13px;
-  left: 385px; }
-
 .content {
   position: relative;
   float: right;

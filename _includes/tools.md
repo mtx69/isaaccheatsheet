@@ -4,6 +4,10 @@
 
 Map gamepad buttons to keyboard input.
 
+#### [How to use JoyToKey](http://mrey4957.blogspot.ca/2012/01/binding-of-issac-using-joytokey.html)
+
+Includes a button contoller map. Very handy.
+
 ### Tools for Macs
 
 #### [Xbox 360 Contoller Driver](http://tattiebogle.net/index.php/ProjectRoot/Xbox360Controller/OsxDriver) 
