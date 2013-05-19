@@ -11,8 +11,13 @@ For best results:
 - Maximize your browser window for at least 1920x1080
 
 Start your Isaac game and have this site behind the game's window. Now you can play the game and see item definitions while you play without having to alt/command-tab to a browser and perform a search.
+ 
+### Boring Stuff
 
-
+- site launched May 8th, 2013
+- built using Google Spreadsheets to hold item names and descriptions
+- php used to pull spreadsheets and display as html fragment
+- Jekyll used to manage site content
 
 </div>
 

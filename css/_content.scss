@@ -8,7 +8,7 @@
 
 // logo ifr
 nav[role='main'] {
-  margin: 1em 0 2em;
+  margin: 0 0 1em;
   font-size: 1.2em;
   text-align: center;
   h1 {
@@ -161,14 +161,8 @@ nav[role='main'] {
 }
 
 #posts {
-  width: 48%;
-  // font-size: .8em;
-  float: left;
   h3 {
     margin: 0;
-  }
-  img {
-    max-width: 80%;
   }
 }
 // #post-pagination {
@@ -176,26 +170,13 @@ nav[role='main'] {
 //   padding-top: 1em;
 // }
 #social {
-  float: right;
-  width: 48%;
-  margin: 0 0 0 2%;
-  padding-left: 2em;
-  border-left: 1px solid rgba(0,0,0,.4);
-  overflow: hidden;
-  // outline: 1px solid pink;
-  img {
-    max-width: 75%;
-    margin: 1em auto;
-    border: 6px solid darken($brown, 5%);
-    box-shadow: 0 20px 20px -10px rgba(0,0,0,.6);
-
-  }
 }
 
 .column {
   overflow: hidden;
   float: left;
-  margin: 0 1%;
+  // margin: 0 1%;
+  padding: 0 2em;
   a img {
     // border: 6px solid darken($brown, 5%);
     box-shadow: 0 20px 20px -10px rgba(0,0,0,.6);
@@ -210,13 +191,13 @@ nav[role='main'] {
 }
 
 .two {
-  width: 48%;
+  width: 50%;
 }
 .onethird {
-  width: 31%;
+  width: 33%;
 }
 .twothirds {
-  width: 64%;
+  width: 66%;
 }
 
 
