@@ -180,13 +180,16 @@ nav[role='main'] {
   a img {
     // border: 6px solid darken($brown, 5%);
     box-shadow: 0 20px 20px -10px rgba(0,0,0,.6);
-    margin:0 0 20px 0;
+    margin:.5em 0 20px 0;
   }
   img {
     max-width: 100%;
   }
   ul {
     padding: 0 0 0 1.5em;
+  }
+  li {
+    margin-bottom: .25em;
   }
 }
 

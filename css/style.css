@@ -332,11 +332,13 @@ nav[role='main'] {
   padding: 0 2em; }
   .column a img {
     box-shadow: 0 20px 20px -10px rgba(0, 0, 0, 0.6);
-    margin: 0 0 20px 0; }
+    margin: .5em 0 20px 0; }
   .column img {
     max-width: 100%; }
   .column ul {
     padding: 0 0 0 1.5em; }
+  .column li {
+    margin-bottom: .25em; }
 
 .two {
   width: 50%; }
