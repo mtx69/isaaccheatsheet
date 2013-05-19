@@ -14,7 +14,7 @@
 
         <link rel="stylesheet" href="/css/normalize.css"/>
         <link rel="stylesheet" href="/css/main.css"/>
-        <link rel="stylesheet" href="/css/style3.css"/>
+        <link rel="stylesheet" href="/css/style.css"/>
         <script src="/js/vendor/modernizr-2.6.2.min.js"></script>
     </head>
     <body>
@@ -23,7 +23,6 @@
         <![endif]-->
 
         <div id='wrapper'>
-            <!-- <img src="img/screenshot.png" class="screenshot"/> -->
 
 
             <div class='main'>
@@ -39,7 +38,7 @@
                         <li><a class="lightbox-31286340382249" style="cursor:pointer;">Contact</a></li>
                     </nav>
                     
-                    <div class='instructions' id="modal" draggable='true'>
+                    <div id="modal">
                         <h2>Instructions:</h2>
                         <ol>
                             <li>Launch The Binding of Isaac.</li>
@@ -405,7 +404,7 @@ $('.close').click(function(e){
 });
 // show the window when instr is clicked
 $('#instr').click(function(e){
-    $('.instructions').fadeIn(500);
+    $('#modal').fadeIn(500);
     e.preventDefault();
 });
 

@@ -1,0 +1,39 @@
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+html {
+  height: 100%;
+  margin: 0; padding: 0;
+}
+body {
+  background: url(../img/the-binding-of-isaac-game-wallpaper.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font-family: verdana;
+  color: $yellow;
+  margin: 0; padding: 0;
+  font-size: 62.65%;
+  overflow-x: hidden;
+  &:after {
+    content: ' ';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: transparentize(lighten($brown,6%),.15);
+    z-index: 10;
+  }
+}
+
+h1, h2, h3, h4, h5, h6, nav {
+  font-family: 'Delius Unicase', verdana, sans-serif;
+}
+
+a {
+  color: #fb0;
+  &:hover {
+    color: #ff0;
+  }
+}
