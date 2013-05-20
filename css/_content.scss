@@ -170,6 +170,15 @@ nav[role='main'] {
 //   padding-top: 1em;
 // }
 #social {
+  a img {
+    // border: 6px solid darken($brown, 5%);
+    box-shadow: 0 20px 20px -10px rgba(0,0,0,.6);
+    margin:.5em 0 20px 0;
+  }
+}
+
+.centered {
+  text-align: center;
 }
 
 .column {
@@ -177,11 +186,6 @@ nav[role='main'] {
   float: left;
   // margin: 0 1%;
   padding: 0 2em;
-  a img {
-    // border: 6px solid darken($brown, 5%);
-    box-shadow: 0 20px 20px -10px rgba(0,0,0,.6);
-    margin:.5em 0 20px 0;
-  }
   img {
     max-width: 100%;
   }
@@ -215,7 +219,7 @@ nav[role='main'] {
 }
 
 
-#deadbird { height: 433px; } 
+#deadbird { height: 450px; } 
 .twitterSearchTitle { display: none; }
 .twitterSearchTweet { padding-bottom: 1em }
 .twitterSearchUser { font-weight: bold }

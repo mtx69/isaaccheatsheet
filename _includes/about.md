@@ -23,7 +23,7 @@ Start your Isaac game and have this site behind the game's window. Now you can p
 
 <div class='twothirds column' markdown='1'>
 
-[![screenshot](/img/how-to-use.png)](/img/how-to-use.png)
+[![screenshot](/img/how-to-use.png)](/img/how-to-use.png){:target="_blank"}
 
 Above: This is how you should be setting up your browser and Isaac game window.
 

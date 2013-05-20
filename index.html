@@ -15,8 +15,13 @@ title: Welcome
 
 <p class='date'>{{ post.date | date_to_string }} | <a href='{{ post.url }}'>Permalink</a></p>
 
-{{ post.content | markdownify }}
-
+<!-- except code: https://coderwall.com/p/eazb7w -->
+{% if post.content contains '<!--more-->' %}
+    {{ post.content | split:'<!--more-->' | first }}
+    <a href='{{ post.url }}' class='more'>Read &rarr;</a> 
+{% else %}
+    {{ post.content }}
+{% endif %}
 
 </article>
 
@@ -49,7 +54,7 @@ title: Welcome
     {% endfor %}
 
   {% if paginator.next_page %}
-      <a href="{{ paginator.next_page_path }}">Older</a>
+      <a href="/{{ paginator.next_page_path }}">Older</a>
   {% else %}
       <span>Older</span>
   {% endif %}
@@ -58,9 +63,9 @@ title: Welcome
 
 </div><!-- posts -->
 
-<div class='onethird column twitter1'>
+<div id='deadbird' class='onethird column'>
   <h3>Tweets from Dead Birds</h3>
-  <div id='deadbird'></div>
+  <div id='tweets'></div>
 </div>
 
 
