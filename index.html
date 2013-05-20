@@ -66,20 +66,7 @@ title: Welcome
 
 <div id='social' class='onethird column'>
     <article>
-      <h3>On Reddit</h3>
-      <ul>
-        <li>
-          <a href='http://www.reddit.com/r/bindingofisaac/comments/1em72t/tips_for_a_relatively_new_player/' target='_blank'>Tips for a relatively new player</a>
-        </li>
-        <li>
-            <a href="http://imgur.com/qnzARgd" target='_blank'>
-                Biggest laser I've ever gotten no.2 (This time with crazy tears):<br>
-                <img src="http://i.imgur.com/qnzARgd.png" title="Hosted by imgur.com">
-            </a>
-        </li>
-        <li>
-          <a href='http://www.reddit.com/r/bindingofisaac/comments/1efz5h/post_an_isaac_fact_you_think_not_many_people_are/' target='_blank'>Post an Isaac fact you think not many people are aware of</a>
-        </li>
-      </ul>
+{% capture social %}{% include social.md %}{% endcapture %}
+{{ social | markdownify }}
     </article>
 </div><!-- social -->
