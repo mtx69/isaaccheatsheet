@@ -200,7 +200,7 @@ nav[role='main'] {
   }
 }
 
-.two {
+.onehalf, .half, .two {
   width: 50%;
 }
 .onethird {
@@ -208,6 +208,12 @@ nav[role='main'] {
 }
 .twothirds {
   width: 66%;
+}
+.onequarter {
+  width: 25%;
+}
+.threequarters {
+  width: 75%;
 }
 
 

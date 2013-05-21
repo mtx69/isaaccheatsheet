@@ -346,7 +346,7 @@ nav[role='main'] {
   .column li {
     margin-bottom: .25em; }
 
-.two {
+.onehalf, .half, .two {
   width: 50%; }
 
 .onethird {
@@ -354,6 +354,12 @@ nav[role='main'] {
 
 .twothirds {
   width: 66%; }
+
+.onequarter {
+  width: 25%; }
+
+.threequarters {
+  width: 75%; }
 
 .fluid .content {
   height: 760px; }
