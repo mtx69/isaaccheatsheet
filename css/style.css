@@ -329,6 +329,8 @@ nav[role='main'] {
 #social a img {
   box-shadow: 0 20px 20px -10px rgba(0, 0, 0, 0.6);
   margin: .5em 0 20px 0; }
+#social li {
+  margin: .5em 0; }
 
 .centered {
   text-align: center; }
