@@ -43,6 +43,31 @@ $('#tweets').twitterSearch({
     applyStyles: false
 });
 
+// reddits
+// https://gist.github.com/sente/947491
+$.getJSON(
+"http://www.reddit.com/r/bindingofisaac.json?jsonp=?",
+function foo(data)
+{
+  $.each(
+    data.data.children.slice(0, 8),
+    function (i, post) {
+      var img = ['jpg','png','gif'];
+      var item = '<li><p><strong><a href="' + post.data.url + '">' + post.data.title + '</strong></a></p>';
+      if (x=$.inArray(post.data.url.split('.').pop(), img)>0) {
+        console.log(x + ' : ' + post.data.url);
+      }
+      item += '<p>(' + post.data.ups + '/' + post.data.downs + ') <a href="'+post.data.permalink+'">Comments</a></p></li>';
+      $("#social article ul").append(item);
+    }
+  )
+}
+)
+.success(function() { console.log("second success"); })
+.error(function() { console.log("error"); })
+.complete(function() { console.log("complete"); });
+
+
 
 // check model prefs
 
