@@ -211,6 +211,7 @@ nav[role='main'] {
   nav[role='main'] h1 {
     width: 503px;
     height: 127px;
+    margin: .25em 0;
     text-indent: 100%;
     white-space: nowrap;
     overflow: hidden;
@@ -327,8 +328,12 @@ nav[role='main'] {
   margin: 0; }
 
 #social a img {
-  box-shadow: 0 20px 20px -10px rgba(0, 0, 0, 0.6);
-  margin: .5em 0 20px 0; }
+  box-shadow: 0 6px 4px -4px rgba(0, 0, 0, 0.4);
+  border-radius: 3px;
+  margin: .25em 1em .25em 0;
+  border: 1px solid #312820; }
+  #social a img:hover {
+    border-color: #ae9683; }
 #social li {
   margin: .5em 0; }
 

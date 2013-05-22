@@ -3,76 +3,76 @@ layout: cheatsheet
 title: Welcome
 ---
 
-<div id='posts' class='half column'>
+<div id='posts' class='twothirds column'>
 
-<!-- <h2>Basement News</h2> -->
+  <!-- <h2>Basement News</h2> -->
 
-{% for post in paginator.posts %}
+  {% for post in paginator.posts %}
 
-<article>
+  <article>
 
-<h3>{{ post.title }}</h3>
+    <h3>{{ post.title }}</h3>
 
-<p class='date'>{{ post.date | date_to_string }} | <a href='{{ post.url }}'>Permalink</a></p>
+    <p class='date'>{{ post.date | date_to_string }} | <a href='{{ post.url }}'>Permalink</a></p>
 
-<!-- except code: https://coderwall.com/p/eazb7w -->
-{% if post.content contains '<!--more-->' %}
-    {{ post.content | split:'<!--more-->' | first }}
-    <a href='{{ post.url }}' class='more'>Read &rarr;</a> 
-{% else %}
-    {{ post.content }}
-{% endif %}
+    <!-- except code: https://coderwall.com/p/eazb7w -->
+    {% if post.content contains '<!--more-->' %}
+        {{ post.content | split:'<!--more-->' | first }}
+        <a href='{{ post.url }}' class='more'>Read&nbsp;&rarr;</a> 
+    {% else %}
+        {{ post.content }}
+    {% endif %}
 
-</article>
+  </article>
 
-{% endfor %}
+  {% endfor %}
 
-<div id="post-pagination" class="pagination">
-  News: 
-  {% if paginator.previous_page %}
-      {% if paginator.previous_page == 1 %}
-        <a href="/">Newer</a>
-      {% else %}
-        <a href="{{ paginator.previous_page_path }}">Newer</a>
-      {% endif %}
-  {% else %}
-      <span>Newer</span>
-  {% endif %}
-
-      {% if paginator.page == 1 %}
-        <span class="current-page">1</span>
-      {% else %}
-        <a href="/">1</a>
-      {% endif %}
-
-    {% for count in (2..paginator.total_pages) %}
-        {% if count == paginator.page %}
-          <span class="current-page">{{ count }}</span>
+  <div id="post-pagination" class="pagination">
+    News: 
+    {% if paginator.previous_page %}
+        {% if paginator.previous_page == 1 %}
+          <a href="/">Newer</a>
         {% else %}
-          <a href="/page{{ count }}">{{ count }}</a>
+          <a href="{{ paginator.previous_page_path }}">Newer</a>
         {% endif %}
-    {% endfor %}
+    {% else %}
+        <span>Newer</span>
+    {% endif %}
 
-  {% if paginator.next_page %}
-      <a href="/{{ paginator.next_page_path }}">Older</a>
-  {% else %}
-      <span>Older</span>
-  {% endif %}
+        {% if paginator.page == 1 %}
+          <span class="current-page">1</span>
+        {% else %}
+          <a href="/">1</a>
+        {% endif %}
 
-</div>
+      {% for count in (2..paginator.total_pages) %}
+          {% if count == paginator.page %}
+            <span class="current-page">{{ count }}</span>
+          {% else %}
+            <a href="/page{{ count }}">{{ count }}</a>
+          {% endif %}
+      {% endfor %}
+
+    {% if paginator.next_page %}
+        <a href="/{{ paginator.next_page_path }}">Older</a>
+    {% else %}
+        <span>Older</span>
+    {% endif %}
+
+  </div>
 
 </div><!-- posts -->
 
-<div id='deadbird' class='onequarter column'>
+<!-- <div id='deadbird' class='onequarter column'>
   <h3>Tweets from Dead Birds</h3>
   <div id='tweets'></div>
 </div>
+ -->
 
-
-<div id='social' class='onequarter column'>
-    <h3>r/bindingofisaac</h3>
-    <article>
-
-      <ul></ul>
-    </article>
+<div id='social' class='onethird column'>
+    <h3>On r/bindingofisaac</h3>
+    <!-- <article> -->
+      <div id='rddtpics'></div>
+      <ul id='rddtposts'></ul>
+    <!-- </article> -->
 </div><!-- social -->

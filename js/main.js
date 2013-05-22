@@ -29,20 +29,33 @@ $('#tweets').twitterSearch({
 
 // reddits
 // https://gist.github.com/sente/947491
+var rddt = 0;
+var tbns = 0;
 $.getJSON(
 "http://www.reddit.com/r/bindingofisaac.json?jsonp=?",
 function foo(data)
 {
   $.each(
-    data.data.children.slice(0, 8),
+    data.data.children.slice(0, 50),
     function (i, post) {
       var img = ['jpg','png','gif'];
-      var item = '<li><p><strong><a href="' + post.data.url + '" target="_blank">' + post.data.title + '</strong></a></p>';
-      if (x=$.inArray(post.data.url.split('.').pop(), img)>0) {
-        console.log(x + ' : ' + post.data.url);
+      var item = '';
+      var tbn = '';
+      if (post.data.thumbnail && post.data.thumbnail != 'self' && tbns < 9) {
+        tbns++;
+        tbn += '<a href="' + post.data.url + '" title="' + post.data.title + '" target="_blank"><img src="' + post.data.thumbnail + '"></a>';
+      } else if (rddt<=4) {
+          rddt++;
+          item = '<li><p><strong><a href="' + post.data.url + '" target="_blank">' + post.data.title + '</strong></a></p>';
+          item += '<p>' + post.data.ups + '&uarr; ' + post.data.downs + '&darr; | <a href="//reddit.com' + post.data.permalink + '" target="_blank">' + post.data.num_comments + ' Comments</a></p></li>';
       }
-      item += '<p>(' + post.data.ups + '&uarr; / ' + post.data.downs + '&darr;) <a href="//reddit.com' + post.data.permalink + '" target="_blank">' + post.data.num_comments + ' Comments</a></p></li>';
-      $("#social article ul").append(item);
+      // if (x=$.inArray(post.data.url.split('.').pop(), img)>0) {
+      //   console.log(x + ' : ' + post.data.url);
+      //   console.log('tbn: '+post.data.thumbnail);
+      //   tbn += '<a href="' + post.data.url + '" target="_blank"><img src="' + post.data.thumbnail + '"></a>';
+      // }
+      $("#social #rddtposts").append(item);
+      $("#social #rddtpics").append(tbn);
     }
   )
 }

@@ -9,8 +9,8 @@ Supermeatboy was Team Meat's take on Mario but BOI is a mashup of multiple influ
 
 - Zelda - map layout
 - Roguelikes - map generation, monster placement?
-<!--more-->
 - Robotron/Smash TV - dual stick shooter
+<!--more-->
 - RPG - shops, attributes system
 - FPS - crates/poop hold health, coins
 - DooM - exploding barrels
