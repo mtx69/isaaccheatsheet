@@ -10,33 +10,16 @@ if (getUrlVars()['fluid']=='1') {
     $('body').addClass('fluid');
 }
 
-// tweets
-// http://jquery.malsup.com/twitter/
-$('#tweets').twitterSearch({ 
-    term:   'binding of isaac', 
-    // no fade 
-    animOut: { opacity: 1 }, 
-    avatar:  false, 
-    anchors: true, 
-    bird:    false, 
-    // colorExterior: '#ddd', 
-    // colorInterior: 'white', 
-    pause:   true, 
-    time:    false, 
-    timeout: 3200,
-    applyStyles: false
-});
-
 // reddits
 // https://gist.github.com/sente/947491
 var rddt = 0;
 var tbns = 0;
 $.getJSON(
-"http://www.reddit.com/r/bindingofisaac.json?jsonp=?",
+"http://www.reddit.com/r/bindingofisaac.json?sort=top&t=week&limit=14&jsonp=?",
 function foo(data)
 {
   $.each(
-    data.data.children.slice(0, 50),
+    data.data.children,
     function (i, post) {
       var img = ['jpg','png','gif'];
       var item = '';
