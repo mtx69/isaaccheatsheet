@@ -315,6 +315,12 @@ nav[role='main'] {
         margin-top: 0; }
       .content section[role='main'] article:last-child {
         border-bottom-width: 0; }
+    .content section[role='main'] .single {
+      font-size: 1.25em;
+      line-height: 1.5;
+      margin: 1em 6em 0; }
+      .content section[role='main'] .single p + p, .content section[role='main'] .single p + ul {
+        margin: .75em 0; }
     .content section[role='main'] .date {
       margin-top: 0;
       color: #ae9683; }
@@ -367,9 +373,9 @@ nav[role='main'] {
   width: 75%; }
 
 .fluid .content {
-  height: 760px; }
+  height: 770px; }
 .fluid .items {
-  padding-top: 2px; }
+  padding-top: 0px; }
 
 #deadbird {
   height: 450px; }

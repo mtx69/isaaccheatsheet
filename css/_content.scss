@@ -147,6 +147,14 @@ nav[role='main'] {
         border-bottom-width: 0;
       }
     }
+    .single {
+      font-size: 1.25em;
+      line-height: 1.5;
+      margin: 1em 6em 0;
+      p + p, p + ul {
+        margin: .75em 0;
+      }
+    }
     .date {
       margin-top: 0;
       // font-size: .7em;
@@ -232,11 +240,17 @@ nav[role='main'] {
 .fluid { 
   // adjustments for fluid app
   .content {
-    height: 760px; //fluid.app
+    height: 770px; //fluid.app
   }
   .items {
-    padding-top: 2px;
+    padding-top: 0px;
   }
+  // .slats {
+  //   li {
+  //     padding-top: .25em;
+  //     padding-bottom: .4em;
+  //   }
+  // }
 }
 
 
