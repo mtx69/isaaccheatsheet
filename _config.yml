@@ -1,4 +1,5 @@
 name: Your New Jekyll Site
 pygments: true
+future: false
 markdown: kramdown
 paginate: 4
