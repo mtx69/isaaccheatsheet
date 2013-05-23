@@ -204,6 +204,13 @@ a {
   width: 1472px;
   float: left; }
 
+hr {
+  border: none;
+  margin: 1em 0;
+  padding: 1em 0;
+  clear: both;
+  height: 1px; }
+
 nav[role='main'] {
   margin: 0 0 1em;
   font-size: 1.2em;

@@ -5,6 +5,9 @@ date:   3013-05-23 12:26:01
 categories: game
 ---
 
+Here's a handy chart detailing each character abilities. Adapted from ArchdukeDanWK's [Character Guide](//www.reddit.com/r/bindingofisaac/comments/16ugc3/i_had_a_go_at_making_a_quick_reference_sheet/){:target='_blank'}.
+<!--more-->
+
 Character Ablities
 ------------------
 
@@ -16,4 +19,3 @@ Dude|Health|Items|Speed|Tears|Damage|Range|Powers|Unlocking|Trivia
 **Judas**    |&hearts;                        |Belial, $0.03              |100%|2.7|3|2|Belial is 2x damage|Defeat Mom's Heart|Rumoured to be Fez creator, Phil Fish
 **Eve**      |&hearts;&hearts;                |Dead Bird, Whore of Babylon|123%|2.7|1 2/3|2|Dead Bird: attacks when Even is hit, speed+, dmg+ when close to death|Get at least two items through Deals with the Devil|Edmund's favourite character
 
-Adapted from ArchdukeDanWK's [Character Guide](//www.reddit.com/r/bindingofisaac/comments/16ugc3/i_had_a_go_at_making_a_quick_reference_sheet/){:target='_blank'}

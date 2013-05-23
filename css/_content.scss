@@ -4,7 +4,14 @@
   float: left;
 }
 
-
+hr {
+  border: none;
+  // background: rgba(0,0,0,.4);
+  margin: 1em 0;
+  padding: 1em 0;
+  clear: both;
+  height: 1px;
+}
 
 // logo ifr
 nav[role='main'] {
