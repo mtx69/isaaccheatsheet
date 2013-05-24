@@ -29,6 +29,7 @@ Gems of information found here
 ## Let's Play Videos
 
 - #### [Utorak007](http://www.youtube.com/user/Utorak007/){:target="_blank"}
+- #### [Namaztak's BOI Tips](http://www.youtube.com/playlist?list=PLky2oQQSRR9Gn7fHWE96TyVEYvY5MMoWA&feature=mh_lolz){:target="_blank"}
 - #### [Northernlion](http://www.youtube.com/playlist?list=PL0A25EAE6C2CA3C36){:target="_blank"}
 - #### [Bisnap](http://www.youtube.com/playlist?list=PLA958826F60F5B8B7){:target="_blank"}
 - #### [TwitchTV](http://www.twitch.tv/directory/game/The%20Binding%20of%20Isaac){:target="_blank"}
