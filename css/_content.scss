@@ -278,10 +278,16 @@ footer {
 }
 
 table {
-  margin: .5em 0;
+  margin: .75em 0;
+  border-bottom: 1px solid darken($brown, 5%);
+  th {
+    color: #fff;
+    font-family: 'Delius Unicase', verdana, sans-serif;
+    font-weight: normal;
+  }
   th, td {
-    padding: .1em .5em;
+    padding: .5em .5em;
     // text-align: center;
-    border-top: 1px solid #000;
+    border-top: 1px solid darken($brown, 5%);
   }
 }

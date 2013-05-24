@@ -56,7 +56,7 @@ a {
       margin: 0;
       padding: 0 .4em;
       color: #ae9683;
-      text-shadow: 0 -2px 0 black; }
+      text-shadow: 0 -2px 0 #000; }
     .slats li h3 {
       font-size: 1em;
       font-weight: bold;
@@ -236,7 +236,7 @@ nav[role='main'] {
 
 #modal {
   display: none;
-  font: normal 2em/1.2 "Delius Unicase", verdana, sans-serif;
+  font: normal 2em/1.2 'Delius Unicase', verdana, sans-serif;
   color: #fff;
   background: rgba(0, 0, 0, 0.85);
   box-shadow: 0 0 40px #000;
@@ -266,13 +266,13 @@ nav[role='main'] {
     margin: 0;
     padding: 0 .5em;
     position: absolute;
-    top: -0.65em;
-    right: -0.65em;
+    top: -.65em;
+    right: -.65em;
     text-align: center;
     background: #000;
     border: 2px solid white;
     border-radius: 1em;
-    font: bold 0.5em/1.5em sans-serif;
+    font: bold .5em/1.5em sans-serif;
     cursor: default;
     color: #fff; }
     #modal .close:hover {
@@ -293,7 +293,7 @@ nav[role='main'] {
   margin: 0 24px 0 0;
   border: 2px dashed rgba(255, 255, 255, 0.3);
   border-top-width: 0;
-  border-radius: 0  0 2em 2em;
+  border-radius: 0 0 2em 2em;
   z-index: 1000;
   background: url(../img/blood.png) no-repeat 50% 0;
   overflow-y: auto; }
@@ -406,10 +406,15 @@ footer {
     white-space: nowrap; }
 
 table {
-  margin: .5em 0; }
+  margin: .75em 0;
+  border-bottom: 1px solid #312820; }
+  table th {
+    color: #fff;
+    font-family: 'Delius Unicase', verdana, sans-serif;
+    font-weight: normal; }
   table th, table td {
-    padding: .1em .5em;
-    border-top: 1px solid #000; }
+    padding: .5em .5em;
+    border-top: 1px solid #312820; }
 
 #wrapper {
   position: relative;
@@ -429,16 +434,16 @@ table {
   background: #b00;
   border: 2px solid #000;
   color: #ffffbb;
-  text-shadow: 0 -2px 0 black;
-  font: bold 1em/1 "Delius Unicase", verdana, sans-serif;
+  text-shadow: 0 -2px 0 #000;
+  font: bold 1em/1 'Delius Unicase', verdana, sans-serif;
   border-radius: 1em;
-  box-shadow: inset 0 -3px 3px #ff8800, 0 5px 10px black;
+  box-shadow: inset 0 -3px 3px #f80, 0 5px 10px #000;
   transition: all 150ms ease-in; }
   .btn:hover {
     color: #fff;
     background: #b00;
-    box-shadow: inset 0 -1px 4px yellow, 0 3px 5px black;
-    text-shadow: 0 -1px 0 black; }
+    box-shadow: inset 0 -1px 4px #ff0, 0 3px 5px #000;
+    text-shadow: 0 -1px 0 #000; }
 
 @media all and (max-width: 1890px) {
   #wrapper {

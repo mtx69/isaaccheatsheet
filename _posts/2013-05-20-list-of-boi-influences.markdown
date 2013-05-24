@@ -2,7 +2,7 @@
 layout: post
 title:  "Games that influenced the Binding of Isaac"
 date:   2013-05-20 09:13:00
-categories: isaac
+categories: Isaac
 ---
 
 Supermeatboy was Team Meat's take on Mario but BOI is a mashup of multiple influences:
