@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Mechanics Guide"
-date:   2013-05-24 20:00:00
+date:   2013-05-24 20:30:00
 categories: update
 ---
 
