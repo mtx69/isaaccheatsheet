@@ -1,5 +1,4 @@
-name: Your New Jekyll Site
+name: Isaac's Cheatsheet
 pygments: true
-future: false
 markdown: kramdown
 paginate: 4
