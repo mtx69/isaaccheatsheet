@@ -1,4 +1,4 @@
-Here's a handy chart detailing each character abilities. Adapted from ArchdukeDanWK's [Character Guide](//www.reddit.com/r/bindingofisaac/comments/16ugc3/i_had_a_go_at_making_a_quick_reference_sheet/){:target='_blank'}.
+Here's a handy chart detailing each characters abilities. Adapted from ArchdukeDanWK's [Character Guide](//www.reddit.com/r/bindingofisaac/comments/16ugc3/i_had_a_go_at_making_a_quick_reference_sheet/){:target='_blank'}.
 <!--more-->
 
 Character Guide

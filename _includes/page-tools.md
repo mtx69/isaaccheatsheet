@@ -28,6 +28,9 @@ For Windows, Mac, Linux.
 
 ## Information
 
+- #### [Chiraa's Mechanics Guide](https://gist.github.com/dpatti/4419061){:target="_blank"}
+A must read.
+- #### [Isaac facts from reddit](http://www.reddit.com/r/bindingofisaac/comments/1efz5h/post_an_isaac_fact_you_think_not_many_people_are/)
 - #### [The Binding of Isaac Wiki](http://bindingofisaac.wikia.com){:target="_blank"}
 Everything your need to know about Isaac - items, item combos, characters, etc.
 - #### [r/bindingofisaac subreddit](http://bindingofisaac.reddit.com){:target="_blank"}
@@ -36,15 +39,15 @@ Gems of information found here
 ## Let's Play Videos
 
 - #### [Utorak007](http://www.youtube.com/user/Utorak007/){:target="_blank"}
-Very funny videos (over 50!) with probably *the* best avatar ever
+Very funny videos (over 50!) with probably *the* best avatar ever.
 - #### [Namaztak's BOI Tips](http://www.youtube.com/playlist?list=PLky2oQQSRR9Gn7fHWE96TyVEYvY5MMoWA&feature=mh_lolz){:target="_blank"}
-Amazing and clever tips
+Amazing and clever tips - seriously, watch these.
 - #### [Northernlion](http://www.youtube.com/playlist?list=PL0A25EAE6C2CA3C36){:target="_blank"}
-Over 200 Let's Plays
+Over 200 Let's Plays.
 - #### [Bisnap](http://www.youtube.com/playlist?list=PLA958826F60F5B8B7){:target="_blank"}
-Knows Isaac inside-out. Also check out his [Isaac PSAs](http://www.youtube.com/playlist?list=PLABGXtjmzmhsHYLbnIbDtBj4quNfl2DK9)
+Knows Isaac inside-out. Also check out his [Isaac PSAs](http://www.youtube.com/playlist?list=PLABGXtjmzmhsHYLbnIbDtBj4quNfl2DK9).
 - #### [TwitchTV](http://www.twitch.tv/directory/game/The%20Binding%20of%20Isaac){:target="_blank"}
 - #### [Robbaz](http://www.youtube.com/user/Robbaz){:target="_blank"}
-Not Isaac related but this guy is hilarious
+Not Isaac related but this guy is hilarious and super nice.
 
 </div>
