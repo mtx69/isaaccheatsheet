@@ -1,12 +1,10 @@
 $("#filter").keyup(function() {
-  console.log('.');
-  var filter = $(this).val(), count = 0;
+  var filter = $(this).val();
   $(".slats li").each(function () {
     if ($(this).text().search(new RegExp(filter, "i")) < 0) {
       $(this).css({'display' : 'none'});
     } else {
       $(this).css({'display' : 'inline-block'});
-      count++;
     }
   });
 });
