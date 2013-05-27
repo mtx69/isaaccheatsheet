@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "search-added"
+title:  "Codex and Search added"
 date:   2013-05-26 19:27:49
 categories: update
 ---
