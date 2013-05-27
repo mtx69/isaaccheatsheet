@@ -270,12 +270,22 @@ footer {
   margin: 1.5em 2em 0;
   padding-top: 1em;
   border-top: 1px solid rgba(0,0,0,.3);
-  text-align: center;
+  // text-align: center;
   clear: left;
   a {
     white-space: nowrap;
   }
 }
+
+#filter {
+  // the search thingy
+  margin: 0 0 0 .5em;
+  width: 20em;
+  border: 1px solid rgba(0,0,0,.4);
+  background: transparent;
+  color: #fff;
+}
+
 
 table {
   margin: .75em 0;

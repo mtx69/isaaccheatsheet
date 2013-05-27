@@ -61,18 +61,28 @@
     position: relative;
     z-index: 6;
     font-size: 0;
+    &:before {
+      height: 18px;
+      content: '';
+      display: inline-block;
+    }
   }
 }
 
 .main {
   .item {
     padding: 6px 15px 0 0;
+    ul {
+      &:before {
+        width: 10%;
+      }
+    }
     li {
       width: 10%;
-      &:first-child {
-        width: 20%;
-        padding-left: 10%;
-      }
+      // &:first-child {
+      //   width: 20%;
+      //   padding-left: 10%;
+      // }
     }
   }
   &:after {
@@ -89,12 +99,17 @@
 .activated, .trinkets, .pills {
   padding-top: 0.3em;
   width: 442px;
+  ul {
+    &:before {
+      width: 25%;
+    }
+  }
   li {
     width: 25%;
-    &:first-child {
-      width: 50%;
-      padding-left: 25%;      
-    }
+    // &:first-child {
+    //   width: 50%;
+    //   padding-left: 25%;      
+    // }
   }
 }
 
@@ -177,12 +192,17 @@
   border-top: 1px dashed $divider;
   padding-top: .3em;
   margin-top: .3em;
+  ul {
+    &:before {
+      width: 7%;
+    }
+  }
   li {
     width: 7%;
-    &:first-child {
-      width: 14%;
-      padding-left: 7%;
-    }
+    // &:first-child {
+    //   width: 14%;
+    //   padding-left: 7%;
+    // }
   }
   .slats {
     .icon {

@@ -92,14 +92,17 @@ a {
   position: relative;
   z-index: 6;
   font-size: 0; }
+  .activated ul:before, .item ul:before, .tarot ul:before, .trinkets ul:before, .pills ul:before, .gallery ul:before {
+    height: 18px;
+    content: '';
+    display: inline-block; }
 
 .main .item {
   padding: 6px 15px 0 0; }
+  .main .item ul:before {
+    width: 10%; }
   .main .item li {
     width: 10%; }
-    .main .item li:first-child {
-      width: 20%;
-      padding-left: 10%; }
 .main:after {
   position: absolute;
   bottom: 0;
@@ -111,11 +114,10 @@ a {
 .activated, .trinkets, .pills {
   padding-top: 0.3em;
   width: 442px; }
+  .activated ul:before, .trinkets ul:before, .pills ul:before {
+    width: 25%; }
   .activated li, .trinkets li, .pills li {
     width: 25%; }
-    .activated li:first-child, .trinkets li:first-child, .pills li:first-child {
-      width: 50%;
-      padding-left: 25%; }
 
 .activated, .pills {
   bottom: 0;
@@ -190,11 +192,10 @@ a {
   border-top: 1px dashed rgba(0, 0, 0, 0.35);
   padding-top: .3em;
   margin-top: .3em; }
+  .tarot ul:before {
+    width: 7%; }
   .tarot li {
     width: 7%; }
-    .tarot li:first-child {
-      width: 14%;
-      padding-left: 7%; }
   .tarot .slats .icon {
     width: 18px; }
   .tarot .slats h3, .tarot .slats p {
@@ -400,10 +401,16 @@ footer {
   margin: 1.5em 2em 0;
   padding-top: 1em;
   border-top: 1px solid rgba(0, 0, 0, 0.3);
-  text-align: center;
   clear: left; }
   footer a {
     white-space: nowrap; }
+
+#filter {
+  margin: 0 0 0 .5em;
+  width: 20em;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  background: transparent;
+  color: #fff; }
 
 table {
   margin: .75em 0;

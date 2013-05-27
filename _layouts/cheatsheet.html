@@ -1,5 +1,16 @@
 {% include head.html %}
                         {{ content }}
-{% include footer.html %}
+
+                    </section>
+
+
+
+{% capture footercontent %}{% include footer.md %}{% endcapture %}
+{{ footercontent | markdownify }}
+
+
+                </div><!--.content-->
+
+
 {% include items.html %}
 {% include foot.html %}
