@@ -462,11 +462,10 @@ table {
       display: table;
       position: relative;
       white-space: nowrap; }
+    .main .item ul:before {
+      width: 0px; }
     .main .item li {
       width: 140px; }
-      .main .item li:first-child {
-        padding-left: 0;
-        width: 140px; }
 
   .trinkets, .activated, .pills {
     width: 25%; }
@@ -475,11 +474,10 @@ table {
       width: 100%;
       position: relative;
       min-width: 140px; }
+    .trinkets ul:before, .activated ul:before, .pills ul:before {
+      width: 0px; }
     .trinkets li, .activated li, .pills li {
       width: 140px; }
-      .trinkets li:first-child, .activated li:first-child, .pills li:first-child {
-        padding-left: 0;
-        width: 140px; }
 
   .pills {
     width: 100% !important; }

@@ -63,12 +63,17 @@ $divider: transparentize(#000,.65);
         position: relative;
         white-space: nowrap;
       }
+    ul {
+      &:before {
+      width: 0px;
+      }
+    }
       li {
         width: 140px;
-        &:first-child {
-        padding-left: 0;
-        width: 140px;
-        }
+        // &:first-child {
+        // padding-left: 0;
+        // width: 140px;
+        // }
       }
     }
   }
@@ -80,12 +85,17 @@ $divider: transparentize(#000,.65);
       min-width: 140px;
     }
     width: 25%;
+    ul {
+      &:before {
+      width: 0px;
+      }
+    }
     li {
       width: 140px;
-      &:first-child {
-        padding-left: 0;
-        width: 140px;
-      }
+      // &:first-child {
+      //   padding-left: 0;
+      //   width: 140px;
+      // }
     }
   }
   .pills {
