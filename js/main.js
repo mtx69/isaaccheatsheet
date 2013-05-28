@@ -61,7 +61,7 @@ function foo(data)
 
 
 
-// check model prefs
+// check modal prefs
 
 if (localStorage.getItem("nonag")=='true') {
     $('#modal').hide();
