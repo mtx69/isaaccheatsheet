@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Weekly Humble Indie Nundle"
+title:  "Weekly Humble Indie Bundle"
 date:   2013-05-30 18:48:21
 categories: update
 ---
