@@ -80,6 +80,12 @@ a {
     .slats li h3, .slats li p {
       margin: 0 0 0 29px; }
 
+.hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px); }
+
 .activated, .main, .tarot, .trinkets, .pills, .gallery {
   float: left;
   overflow: hidden;
@@ -99,7 +105,7 @@ a {
     display: inline-block; }
 
 .main .item {
-  padding: 6px 15px 0 0; }
+  padding: 12px 15px 0 0; }
   .main .item ul:before {
     width: 10%; }
   .main .item li {
@@ -201,6 +207,15 @@ a {
     width: 18px; }
   .tarot .slats h3, .tarot .slats p {
     margin: 0 0 0 19px; }
+
+.heart, .soul {
+  text-shadow: -1px -1px 0 #000, 0px 1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; }
+
+.heart {
+  color: #a22; }
+
+.soul {
+  color: #fff; }
 
 .main {
   width: 1472px;

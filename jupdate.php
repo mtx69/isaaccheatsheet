@@ -38,19 +38,35 @@ function getsheetlist($sheet) {
 
 
       $items .= "<li id='$shortname'><div class='icon'>";
+      $desc = ($row->{'gsx$description'}->{'$t'});
 
       $pathtoimg = "img/all/{$shortname}.png";
       if (file_exists($pathtoimg)) {
         // list($width, $height) = getimagesize($pathtoimg);
         // $items .= "<img src='{$pathtoimg}' width='{$width}' height='{$height}'>";
-        $items .= "<img src='/{$pathtoimg}'>";
+        $items .= "<img src='/{$pathtoimg}' title='{$desc}'>";
       }
 
 
 
       $items .= "</div><h3>$item</h3>";
 
-      $items .= "<p>" . ($row->{'gsx$description'}->{'$t'}). "</p></li>\n";
+      $desc = ($row->{'gsx$description'}->{'$t'});
+      $items .= "<p class='longdesc hidden'>" . $desc . "</p>\n";
+      $items .= "<p class='keywords hidden'>" . ($row->{'gsx$keywords'}->{'$t'}) . "</p>\n";
+
+      // $desc = str_replace("heart", "<span style='color:#900'>&#9829;</span>", $desc);
+      $desc = str_ireplace("heart", "<span class='heart'>&#9829;</span>", $desc);
+      $desc = str_ireplace("soul <span class='heart'>&#9829;</span>", "<span class='soul'>&#9829;</span>", $desc);
+      $desc = str_ireplace("random", "rdm", $desc);
+      $desc = str_ireplace("damage", "dmg", $desc);
+      $desc = str_ireplace("speed", "spd", $desc);
+      $desc = str_ireplace("familiar", "buddy", $desc);
+      $desc = str_ireplace("teleport", "goto", $desc);
+      $desc = str_ireplace("room", "rm", $desc);
+      $desc = str_ireplace("flight", "fly", $desc);
+
+      $items .= "<p>" . $desc . "</p></li>\n";
       }
     return $items;
 }

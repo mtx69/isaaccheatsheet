@@ -47,6 +47,12 @@
   }
 }
 
+.hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
 .activated, .main, .tarot, .trinkets, .pills, .gallery {
   float: left;
   overflow: hidden;
@@ -72,7 +78,7 @@
 
 .main {
   .item {
-    padding: 6px 15px 0 0;
+    padding: 12px 15px 0 0;
     ul {
       &:before {
         width: 10%;
@@ -214,4 +220,17 @@
     }    
   }
 }
-
+.heart, .soul {
+  text-shadow:
+   -1px -1px 0 #000,  
+    0px  1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000;
+}
+.heart {
+  color: #a22;
+}
+.soul {
+  color: #fff;
+}

@@ -1,7 +1,7 @@
 <footer markdown='1'>
 
 <div class='onethird column' markdown='1'>
-  <label for='filter' markdown='1'>Search </label><input name='filter' id='filter' markdown='1'>
+  <label for='filter' markdown='1'>Search </label><input type='search' results='5' name='filter' id='filter' markdown='1'>
 </div>
 
 <div class='twothirds column' markdown='1'>

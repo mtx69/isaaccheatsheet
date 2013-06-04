@@ -1,0 +1,7 @@
+task :php do
+  sh "php jupdate.php > _includes/items.html"
+end
+ 
+task :default do
+  sh "jekyll serve --watch"
+end
