@@ -44,7 +44,7 @@ function getsheetlist($sheet) {
       if (file_exists($pathtoimg)) {
         // list($width, $height) = getimagesize($pathtoimg);
         // $items .= "<img src='{$pathtoimg}' width='{$width}' height='{$height}'>";
-        $items .= "<img src='/{$pathtoimg}' title='{$desc}'>";
+        $items .= "<img src='/{$pathtoimg}' title=\"{$desc}\">";
       }
 
 
