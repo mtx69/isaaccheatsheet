@@ -1,3 +1,20 @@
+// add regex to jquery selector
+// http://james.padolsey.com/javascript/regex-selector-for-jquery/
+jQuery.expr[':'].regex = function(elem, index, match) {
+    var matchParams = match[3].split(','),
+        validLabels = /^(data|css):/,
+        attr = {
+            method: matchParams[0].match(validLabels) ? 
+                        matchParams[0].split(':')[0] : 'attr',
+            property: matchParams.shift().replace(validLabels,'')
+        },
+        regexFlags = 'ig',
+        regex = new RegExp(matchParams.join('').replace(/^\s+|\s+$/g,''), regexFlags);
+    return regex.test(jQuery(elem)[attr.method](attr.property));
+}
+
+
+// search items, hide mismatches
 $("#filter").keyup(function() {
   var filter = $(this).val();
   $(".slats li").each(function () {
@@ -20,6 +37,16 @@ function getUrlVars() {
 }
 if (getUrlVars()['fluid']=='1') {
     $('body').addClass('fluid');
+    // select all links that don't start with http or // and add fluid=1
+    $("a:not(:regex(href,^//|http://))").attr('href', function(i, h) {
+    // $("a:regex(href,^/[a-z])").attr('href', function(i, h) {
+    // $("a:not([href^='http://'])").attr('href', function(i, h) {
+      if (h) { // make sure href exists (jotform links dont have href)
+        return h + "?fluid=1";
+      } else {
+        return;
+      }
+    });
 }
 
 // reddits
