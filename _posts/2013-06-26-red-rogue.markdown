@@ -1,0 +1,8 @@
+---
+layout: post
+title:  "Red Rogue"
+date:   2013-06-26 21:32:40
+categories: update
+---
+
+I found this gem of a game while browsing [r/roguelikes](http://roguelikes.reddit.com). It's a side scrolling Metroidvania  game (no jumping though). Really nice minimalistic pixel art - everything is black, white, gray and red. Freeware and runs on Windows and OSX. [Download it.](http://redrogue.net/)
