@@ -1,0 +1,8 @@
+---
+layout: post
+title:  "Updated information"
+date:   2013-07-05 19:41:53
+categories: update
+---
+
+Thanks to [elucidater](http://www.reddit.com/user/elucidater) the information here is more correct. If you guys see anything wrong on the site please use the contact form to tell me. More accurate information helps everyone!
