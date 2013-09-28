@@ -5,7 +5,7 @@ published: false
 ---
 layout: post
 title:  "Edmund Talks: The Binding of Isaac Origins"
-date:   2013-05-16 18:28:12
+date:   2013-09-28 18:28:12
 categories: edmund
 ---
 
