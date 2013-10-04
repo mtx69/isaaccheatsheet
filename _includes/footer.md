@@ -1,9 +1,9 @@
 <footer markdown='1'>
 
-<div class='searchbox onethird column' markdown='1'>
+<!-- <div class='searchbox onethird column' markdown='1'>
   <label for='filter' markdown='1'></label><span markdown='1'><input name='filter' id='filter' markdown='1'></span>
 </div>
-
+ -->
 <div class='twothirds column' markdown='1'>
 
 Thank you [reddit](//bindingofisaac.reddit.com){:target="_blank"} contributors and sprite rippers. 

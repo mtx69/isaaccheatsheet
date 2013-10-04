@@ -80,9 +80,12 @@ function getsheetlist($sheet) {
 
 ?>
                 <div class='item'>
+                    <label for='filter'></label><span class='filter'><input name='filter' id='filter' placeholder='Search'></span>
                     <h2>Passive Items</h2>
                     <ul class='slats'>
                         <?php echo getsheetlist('items'); ?>
+  
+
                     </ul>
                 </div>
             </div>
