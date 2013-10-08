@@ -2,6 +2,10 @@ task :php do
   sh "php jupdate.php > _includes/items.html"
 end
  
+task :css do
+  sh "cp css/style.css _site/css/"
+end
+ 
 task :update do
   sh "php jupdate.php > _includes/items.html"
 end

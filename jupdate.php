@@ -54,7 +54,10 @@ function getsheetlist($sheet) {
       $desc = ($row->{'gsx$description'}->{'$t'});
       $items .= "<p class='longdesc hidden'>" . $desc . "</p>\n";
       $items .= "<p class='keywords hidden'>" . ($row->{'gsx$keywords'}->{'$t'}) . "</p>\n";
-
+      $deets = ($row->{'gsx$details'}->{'$t'});
+      if (strlen($deets)>0) {
+        $items .= "<p class='details hidden'>" . $deets . "</p>\n";
+      }
       // $desc = str_replace("heart", "<span style='color:#900'>&#9829;</span>", $desc);
       $desc = str_ireplace("heart", "<span class='heart'>&#9829;</span>", $desc);
       $desc = str_ireplace("soul <span class='heart'>&#9829;</span>", "<span class='soul'>&#9829;</span>", $desc);

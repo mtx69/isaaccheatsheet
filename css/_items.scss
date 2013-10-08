@@ -1,3 +1,28 @@
+$yellow: #ffb;
+$brown: darken(rgb(77,62,50),4%);
+$ltbrown: lighten(rgb(77,62,50),35%);
+$red: #f00;
+$divider: transparentize(#000,.65);
+
+.clearfix {
+    zoom:1;
+    &:before, &:after {
+        content: "\0020";
+        display: block;
+        height: 0;
+        overflow: hidden;
+    }
+    &:after {
+        clear: both;
+    }
+}
+
+.hidden {
+  position: absolute;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
 .slats {
   margin: 0;
   padding: 0;
@@ -10,6 +35,7 @@
     display: inline-block;
     vertical-align: top;
     font-size: 8px;
+    position: relative;
     h2 {
       font-size: 1.7em;
       margin: 0;
@@ -44,18 +70,69 @@
     h3, p {
       margin: 0 0 0 29px;
     }
+    &:hover {
+      box-shadow: 0 0 0 4px rgba(0,0,0,.2);
+      background: rgba(0,0,0,.2);
+      border-radius: 2px;
+      
+      $deets-brown: darken($brown, 10%);
+      $deets-top: -9px;
+      $border-color: rgba(255,255,255,.5);
+
+      p.details.hidden {
+        background: $deets-brown;
+        border: 1px solid $border-color;
+        box-shadow: 7px 7px 0 rgba(0,0,0,.6);
+        clip: auto !important;
+        color: $yellow;
+        display: inline-block !important;
+        font-size: 1.2em;
+        left: -27px;
+        line-height: 1.2;
+        padding: .9em;
+        top: 28px;
+        visibility: visible;
+        white-space: pre-line;
+        max-width: 145px;
+        z-index: 100;
+
+        &:before {
+          border-color: transparent transparent $border-color transparent;
+          border-style: solid;
+          border-width: 0 5px 8px 5px;
+          content: '';
+          display: block;
+          height: 0;
+          left: 5px;
+          position: absolute;
+          top: $deets-top;
+          width: 0;
+          z-index: 101;
+        }
+        &:after {
+          border-color: transparent transparent $deets-brown transparent;
+          border-style: solid;
+          border-width: 0 5px 8px 5px;
+          content: '';
+          display: block;
+          height: 0;
+          left: 5px;
+          position: absolute;
+          top: $deets-top + 2px;
+          width: 0;
+          z-index: 102;
+        }
+
+      }
+
+    }
   }
 }
 
-.hidden {
-  position: absolute !important;
-  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
-  clip: rect(1px, 1px, 1px, 1px);
-}
 
 .activated, .main, .tarot, .trinkets, .pills, .gallery {
   float: left;
-  overflow: hidden;
+  //overflow: hidden;
   position: relative;
 }
 .activated, .item, .tarot, .trinkets, .pills, .gallery {
@@ -74,6 +151,10 @@
       display: inline-block;
     }
   }
+}
+
+.tarot {
+  @extend .clearfix;
 }
 
 .main {

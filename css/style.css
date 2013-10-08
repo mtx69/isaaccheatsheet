@@ -39,6 +39,22 @@ a {
   a:hover {
     color: #ff0; }
 
+.clearfix, .tarot {
+  zoom: 1; }
+  .clearfix:before, .tarot:before, .clearfix:after, .tarot:after {
+    content: "\0020";
+    display: block;
+    height: 0;
+    overflow: hidden; }
+  .clearfix:after, .tarot:after {
+    clear: both; }
+
+.hidden {
+  position: absolute;
+  clip: rect(1px 1px 1px 1px);
+  /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px); }
+
 .slats {
   margin: 0;
   padding: 0; }
@@ -50,7 +66,8 @@ a {
     text-align: left;
     display: inline-block;
     vertical-align: top;
-    font-size: 8px; }
+    font-size: 8px;
+    position: relative; }
     .slats li h2 {
       font-size: 1.7em;
       margin: 0;
@@ -79,16 +96,53 @@ a {
       line-height: 1; }
     .slats li h3, .slats li p {
       margin: 0 0 0 29px; }
-
-.hidden {
-  position: absolute !important;
-  clip: rect(1px 1px 1px 1px);
-  /* IE6, IE7 */
-  clip: rect(1px, 1px, 1px, 1px); }
+    .slats li:hover {
+      box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.2);
+      background: rgba(0, 0, 0, 0.2);
+      border-radius: 2px; }
+      .slats li:hover p.details.hidden {
+        background: #221b16;
+        border: 1px solid rgba(255, 255, 255, 0.5);
+        box-shadow: 7px 7px 0 rgba(0, 0, 0, 0.6);
+        clip: auto !important;
+        color: #ffffbb;
+        display: inline-block !important;
+        font-size: 1.2em;
+        left: -27px;
+        line-height: 1.2;
+        padding: .9em;
+        top: 28px;
+        visibility: visible;
+        white-space: pre-line;
+        max-width: 145px;
+        z-index: 100; }
+        .slats li:hover p.details.hidden:before {
+          border-color: transparent transparent rgba(255, 255, 255, 0.5) transparent;
+          border-style: solid;
+          border-width: 0 5px 8px 5px;
+          content: '';
+          display: block;
+          height: 0;
+          left: 5px;
+          position: absolute;
+          top: -9px;
+          width: 0;
+          z-index: 101; }
+        .slats li:hover p.details.hidden:after {
+          border-color: transparent transparent #221b16 transparent;
+          border-style: solid;
+          border-width: 0 5px 8px 5px;
+          content: '';
+          display: block;
+          height: 0;
+          left: 5px;
+          position: absolute;
+          top: -7px;
+          width: 0;
+          z-index: 102; }
 
 .activated, .main, .tarot, .trinkets, .pills, .gallery {
   float: left;
-  overflow: hidden;
   position: relative; }
 
 .activated h2, .item h2, .tarot h2, .trinkets h2, .pills h2, .gallery h2 {
