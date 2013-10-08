@@ -33,7 +33,7 @@ title: Welcome
         {% if paginator.previous_page == 1 %}
           <a href="/">Newer</a>
         {% else %}
-          <a href="/{{ paginator.previous_page_path }}">Newer</a>
+          <a href="{{ paginator.previous_page_path }}">Newer</a>
         {% endif %}
     {% else %}
         <span>Newer</span>
@@ -54,7 +54,7 @@ title: Welcome
       {% endfor %}
 
     {% if paginator.next_page %}
-        <a href="/{{ paginator.next_page_path }}">Older</a>
+        <a href="{{ paginator.next_page_path }}">Older</a>
     {% else %}
         <span>Older</span>
     {% endif %}
