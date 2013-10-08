@@ -1,6 +1,6 @@
 ---
 published: true
-title: ""
+title: "Site update: hover items to show more text"
 date: "2013-10-7 00:00:00"
 categories: update
 ---
