@@ -1,7 +1,7 @@
 ---
-layout: post
-title: "Hover items to show more details"
-date: 2013-10-03 00:00:01
+published: true
+title: "Site update: hover items to show more text"
+date: "2013-10-7 00:00:00"
 categories: update
 ---
 
